@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="practice.Launchprac">
+      <class name="testMethodsPackage.LaunchTest">
         <methods>
           <include name="browser"/>
           <include name="checkmsg"/>
-          <include name="openUrl"/>
-          <include name="clickgetstarted"/>
+          <include name="quitbrowser"/>
         </methods>
-      </class> <!-- practice.Launchprac -->
+      </class> <!-- testMethodsPackage.LaunchTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

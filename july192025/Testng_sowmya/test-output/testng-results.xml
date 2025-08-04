@@ -1,37 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-03T17:21:12 CDT" name="Default suite" finished-at="2025-08-03T17:21:19 CDT" duration-ms="6184">
+  <suite started-at="2025-08-04T00:59:26 CDT" name="Suite" finished-at="2025-08-04T00:59:36 CDT" duration-ms="9525">
     <groups>
     </groups>
-    <test started-at="2025-08-03T17:21:12 CDT" name="Default test" finished-at="2025-08-03T17:21:19 CDT" duration-ms="6184">
+    <test started-at="2025-08-04T00:59:26 CDT" name="chrometest " finished-at="2025-08-04T00:59:31 CDT" duration-ms="4622">
       <class name="testMethodsPackage.LaunchTest">
-        <test-method is-config="true" signature="browser()[pri:0, instance:testMethodsPackage.LaunchTest@2667f029]" started-at="2025-08-03T17:21:13 CDT" name="browser" finished-at="2025-08-03T17:21:16 CDT" duration-ms="3171" status="PASS">
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.LaunchTest@32eff876]" started-at="2025-08-04T00:59:26 CDT" name="browser" finished-at="2025-08-04T00:59:28 CDT" duration-ms="2036" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method signature="checkmsg()[pri:0, instance:testMethodsPackage.LaunchTest@2667f029]" started-at="2025-08-03T17:21:16 CDT" name="checkmsg" finished-at="2025-08-03T17:21:16 CDT" duration-ms="63" status="PASS">
+        <test-method signature="checkmsg()[pri:0, instance:testMethodsPackage.LaunchTest@32eff876]" started-at="2025-08-04T00:59:28 CDT" name="checkmsg" finished-at="2025-08-04T00:59:29 CDT" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkmsg -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:testMethodsPackage.LaunchTest@2667f029]" started-at="2025-08-03T17:21:16 CDT" name="quitbrowser" finished-at="2025-08-03T17:21:16 CDT" duration-ms="187" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.LaunchTest@32eff876]" started-at="2025-08-04T00:59:29 CDT" name="tearDown" finished-at="2025-08-04T00:59:29 CDT" duration-ms="170" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="browser()[pri:0, instance:testMethodsPackage.LaunchTest@2667f029]" started-at="2025-08-03T17:21:16 CDT" name="browser" finished-at="2025-08-03T17:21:18 CDT" duration-ms="1647" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.LaunchTest@32eff876]" started-at="2025-08-04T00:59:29 CDT" name="browser" finished-at="2025-08-04T00:59:30 CDT" duration-ms="1537" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method signature="clickgetstarted()[pri:0, instance:testMethodsPackage.LaunchTest@2667f029]" started-at="2025-08-03T17:21:18 CDT" name="clickgetstarted" finished-at="2025-08-03T17:21:18 CDT" duration-ms="904" status="PASS">
+        <test-method signature="clickgetstarted()[pri:0, instance:testMethodsPackage.LaunchTest@32eff876]" started-at="2025-08-04T00:59:30 CDT" name="clickgetstarted" finished-at="2025-08-04T00:59:31 CDT" duration-ms="547" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickgetstarted -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:testMethodsPackage.LaunchTest@2667f029]" started-at="2025-08-03T17:21:18 CDT" name="quitbrowser" finished-at="2025-08-03T17:21:19 CDT" duration-ms="160" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.LaunchTest@32eff876]" started-at="2025-08-04T00:59:31 CDT" name="tearDown" finished-at="2025-08-04T00:59:31 CDT" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quitbrowser -->
+        </test-method> <!-- tearDown -->
       </class> <!-- testMethodsPackage.LaunchTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- chrometest  -->
+    <test started-at="2025-08-04T00:59:26 CDT" name="firefoxtest" finished-at="2025-08-04T00:59:36 CDT" duration-ms="9525">
+      <class name="testMethodsPackage.LaunchTest">
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.LaunchTest@654f0d9c]" started-at="2025-08-04T00:59:26 CDT" name="browser" finished-at="2025-08-04T00:59:30 CDT" duration-ms="3574" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method signature="checkmsg()[pri:0, instance:testMethodsPackage.LaunchTest@654f0d9c]" started-at="2025-08-04T00:59:30 CDT" name="checkmsg" finished-at="2025-08-04T00:59:30 CDT" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkmsg -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.LaunchTest@654f0d9c]" started-at="2025-08-04T00:59:30 CDT" name="tearDown" finished-at="2025-08-04T00:59:32 CDT" duration-ms="1442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.LaunchTest@654f0d9c]" started-at="2025-08-04T00:59:32 CDT" name="browser" finished-at="2025-08-04T00:59:35 CDT" duration-ms="3049" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method signature="clickgetstarted()[pri:0, instance:testMethodsPackage.LaunchTest@654f0d9c]" started-at="2025-08-04T00:59:35 CDT" name="clickgetstarted" finished-at="2025-08-04T00:59:35 CDT" duration-ms="432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickgetstarted -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.LaunchTest@654f0d9c]" started-at="2025-08-04T00:59:35 CDT" name="tearDown" finished-at="2025-08-04T00:59:36 CDT" duration-ms="877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testMethodsPackage.LaunchTest -->
+    </test> <!-- firefoxtest -->
+  </suite> <!-- Suite -->
 </testng-results>

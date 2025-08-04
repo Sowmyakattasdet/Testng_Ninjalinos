@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.Launchprac">
+      <class name="testMethodsPackage.HomeTest">
         <methods>
+          <include name="DropdownDS"/>
           <include name="browser"/>
-          <include name="checkmsg"/>
-          <include name="openUrl"/>
-          <include name="clickgetstarted"/>
         </methods>
-      </class> <!-- practice.Launchprac -->
+      </class> <!-- testMethodsPackage.HomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
