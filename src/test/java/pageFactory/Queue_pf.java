@@ -20,6 +20,7 @@ public class Queue_pf {
 	String browser;
 	WebDriverWait wait;
 	
+	
 	@FindBy(xpath = "//h5[text()='Queue']/../../..//a[text()='Get Started']")
 	WebElement QueueBtn;
 
@@ -45,6 +46,7 @@ public class Queue_pf {
 
 	public Queue_pf() {
 		this.tldriver = DriverFactory_TestNG.getDriver();
+		
 		//this.tldriver = driver;
 		this.action = new Actions(tldriver);
 		PageFactory.initElements(tldriver, this);

@@ -19,6 +19,7 @@ public class Stack_pf {
 	String browser;
 	WebDriverWait wait;
 	
+	
 	@FindBy(xpath = "//h5[text()='Stack']/../../..//a[text()='Get Started']")
 	WebElement stackBtn;
 
@@ -41,6 +42,7 @@ public class Stack_pf {
 	
 	public Stack_pf() {
 		this.tldriver = DriverFactory_TestNG.getDriver();
+		
 		//this.tldriver = driver;
 		this.action = new Actions(tldriver);
 		PageFactory.initElements(tldriver, this);

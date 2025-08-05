@@ -21,6 +21,7 @@ public class BasePage {
 	ConfigReader config;
 	
 	
+	
 	@FindBy(xpath = "//div[2]/following::*/div[2]/a")
 	WebElement tryHereQueue;
 	@FindBy(className = "btn")
@@ -46,6 +47,7 @@ public class BasePage {
 
 		this.config = new ConfigReader();
 		this.tldriver = DriverFactory_TestNG.getDriver();
+		
 		//this.tldriver = driver;
 		PageFactory.initElements(tldriver, this);
 		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
