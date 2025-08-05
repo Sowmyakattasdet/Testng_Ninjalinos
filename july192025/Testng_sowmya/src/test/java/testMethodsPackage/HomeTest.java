@@ -13,22 +13,22 @@ import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.LaunchPage;
 
-public class HomeTest {
+public class HomeTest extends BaseTest {
 	  WebDriver driver;
-		 LaunchPage Launchpf;
-		 HomePage Homepf;
+		// LaunchPage Launchpf;
+//		 HomePage Homepf;
 		 
 
 			@BeforeMethod
-			void browser()
+			void Home()
 			{
-				driver=new FirefoxDriver();
+				//driver=new FirefoxDriver();
 				//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-				driver.manage().window().maximize();
-				Launchpf = new LaunchPage(driver);
-				Homepf = new HomePage(driver);
+//				driver.manage().window().maximize();
+			//	Launchpf = new LaunchPage(driver);
+//				Homepf = new HomePage(driver);
 				Launchpf.geturl();
-				driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(300));
+				//driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(300));
 
 				Launchpf.clickgetstarted();
 			}

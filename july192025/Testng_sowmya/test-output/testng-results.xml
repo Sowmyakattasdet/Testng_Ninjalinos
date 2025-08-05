@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="14" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-04T00:59:26 CDT" name="Suite" finished-at="2025-08-04T00:59:36 CDT" duration-ms="9525">
+  <suite started-at="2025-08-04T22:31:51 CDT" name="Suite" finished-at="2025-08-04T22:32:49 CDT" duration-ms="57331">
     <groups>
     </groups>
-    <test started-at="2025-08-04T00:59:26 CDT" name="chrometest " finished-at="2025-08-04T00:59:31 CDT" duration-ms="4622">
-      <class name="testMethodsPackage.LaunchTest">
-        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.LaunchTest@32eff876]" started-at="2025-08-04T00:59:26 CDT" name="browser" finished-at="2025-08-04T00:59:28 CDT" duration-ms="2036" status="PASS">
+    <test started-at="2025-08-04T22:31:51 CDT" name="chrometest " finished-at="2025-08-04T22:32:49 CDT" duration-ms="57331">
+      <class name="testMethodsPackage.HomeTest">
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:31:52 CDT" name="browser" finished-at="2025-08-04T22:31:53 CDT" duration-ms="1865" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method signature="checkmsg()[pri:0, instance:testMethodsPackage.LaunchTest@32eff876]" started-at="2025-08-04T00:59:28 CDT" name="checkmsg" finished-at="2025-08-04T00:59:29 CDT" duration-ms="63" status="PASS">
+        <test-method is-config="true" signature="Home()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:31:53 CDT" name="Home" finished-at="2025-08-04T22:31:55 CDT" duration-ms="1314" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkmsg -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.LaunchTest@32eff876]" started-at="2025-08-04T00:59:29 CDT" name="tearDown" finished-at="2025-08-04T00:59:29 CDT" duration-ms="170" status="PASS">
+        </test-method> <!-- Home -->
+        <test-method signature="ClicksDataStBtn()[pri:1, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:31:55 CDT" name="ClicksDataStBtn" finished-at="2025-08-04T22:31:55 CDT" duration-ms="588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClicksDataStBtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:31:55 CDT" name="tearDown" finished-at="2025-08-04T22:31:56 CDT" duration-ms="233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.LaunchTest@32eff876]" started-at="2025-08-04T00:59:29 CDT" name="browser" finished-at="2025-08-04T00:59:30 CDT" duration-ms="1537" status="PASS">
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:31:56 CDT" name="browser" finished-at="2025-08-04T22:31:56 CDT" duration-ms="925" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,57 +41,382 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method signature="clickgetstarted()[pri:0, instance:testMethodsPackage.LaunchTest@32eff876]" started-at="2025-08-04T00:59:30 CDT" name="clickgetstarted" finished-at="2025-08-04T00:59:31 CDT" duration-ms="547" status="PASS">
+        <test-method is-config="true" signature="Home()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:31:56 CDT" name="Home" finished-at="2025-08-04T22:31:58 CDT" duration-ms="1197" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickgetstarted -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.LaunchTest@32eff876]" started-at="2025-08-04T00:59:31 CDT" name="tearDown" finished-at="2025-08-04T00:59:31 CDT" duration-ms="212" status="PASS">
+        </test-method> <!-- Home -->
+        <test-method signature="ClickArrayBtn()[pri:2, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:31:58 CDT" name="ClickArrayBtn" finished-at="2025-08-04T22:31:58 CDT" duration-ms="638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickArrayBtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:31:58 CDT" name="tearDown" finished-at="2025-08-04T22:31:59 CDT" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testMethodsPackage.LaunchTest -->
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:31:59 CDT" name="browser" finished-at="2025-08-04T22:32:00 CDT" duration-ms="996" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method is-config="true" signature="Home()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:00 CDT" name="Home" finished-at="2025-08-04T22:32:01 CDT" duration-ms="1194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Home -->
+        <test-method signature="ClickLinkedlstBtn()[pri:3, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:01 CDT" name="ClickLinkedlstBtn" finished-at="2025-08-04T22:32:01 CDT" duration-ms="605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickLinkedlstBtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:01 CDT" name="tearDown" finished-at="2025-08-04T22:32:02 CDT" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:02 CDT" name="browser" finished-at="2025-08-04T22:32:03 CDT" duration-ms="975" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method is-config="true" signature="Home()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:03 CDT" name="Home" finished-at="2025-08-04T22:32:04 CDT" duration-ms="1043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Home -->
+        <test-method signature="ClickStacktBtn()[pri:4, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:04 CDT" name="ClickStacktBtn" finished-at="2025-08-04T22:32:04 CDT" duration-ms="538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickStacktBtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:04 CDT" name="tearDown" finished-at="2025-08-04T22:32:04 CDT" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:04 CDT" name="browser" finished-at="2025-08-04T22:32:05 CDT" duration-ms="1040" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method is-config="true" signature="Home()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:05 CDT" name="Home" finished-at="2025-08-04T22:32:07 CDT" duration-ms="1461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Home -->
+        <test-method signature="ClickQueueBtn()[pri:5, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:07 CDT" name="ClickQueueBtn" finished-at="2025-08-04T22:32:07 CDT" duration-ms="537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickQueueBtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:07 CDT" name="tearDown" finished-at="2025-08-04T22:32:08 CDT" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:08 CDT" name="browser" finished-at="2025-08-04T22:32:09 CDT" duration-ms="976" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method is-config="true" signature="Home()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:09 CDT" name="Home" finished-at="2025-08-04T22:32:10 CDT" duration-ms="1193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Home -->
+        <test-method signature="ClickTreeBtn()[pri:6, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:10 CDT" name="ClickTreeBtn" finished-at="2025-08-04T22:32:10 CDT" duration-ms="588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickTreeBtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:10 CDT" name="tearDown" finished-at="2025-08-04T22:32:11 CDT" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:11 CDT" name="browser" finished-at="2025-08-04T22:32:11 CDT" duration-ms="925" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method is-config="true" signature="Home()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:11 CDT" name="Home" finished-at="2025-08-04T22:32:13 CDT" duration-ms="1413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Home -->
+        <test-method signature="ClickGraphBtn()[pri:7, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:13 CDT" name="ClickGraphBtn" finished-at="2025-08-04T22:32:14 CDT" duration-ms="619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickGraphBtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:14 CDT" name="tearDown" finished-at="2025-08-04T22:32:14 CDT" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:14 CDT" name="browser" finished-at="2025-08-04T22:32:15 CDT" duration-ms="892" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method is-config="true" signature="Home()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:15 CDT" name="Home" finished-at="2025-08-04T22:32:16 CDT" duration-ms="1822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Home -->
+        <test-method signature="DropdownDS()[pri:8, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:16 CDT" name="DropdownDS" finished-at="2025-08-04T22:32:27 CDT" duration-ms="10173" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='alert alert-primary']"}
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b3cc7ec806ce24f5cb3b231047c07051, findElement {using=xpath, value=//*[@class='alert alert-primary']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55974}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55974/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b3cc7ec806ce24f5cb3b231047c07051]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='alert alert-primary']"}
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b3cc7ec806ce24f5cb3b231047c07051, findElement {using=xpath, value=//*[@class='alert alert-primary']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55974}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55974/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b3cc7ec806ce24f5cb3b231047c07051
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
+at pageObjects.HomePage.notloggedinmesg(HomePage.java:177)
+at testMethodsPackage.HomeTest.DropdownDS(HomeTest.java:125)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropdownDS -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:27 CDT" name="tearDown" finished-at="2025-08-04T22:32:27 CDT" duration-ms="755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:27 CDT" name="browser" finished-at="2025-08-04T22:32:28 CDT" duration-ms="1117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method is-config="true" signature="Home()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:28 CDT" name="Home" finished-at="2025-08-04T22:32:30 CDT" duration-ms="1227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Home -->
+        <test-method signature="DropdownArray()[pri:9, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:30 CDT" name="DropdownArray" finished-at="2025-08-04T22:32:30 CDT" duration-ms="591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropdownArray -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:30 CDT" name="tearDown" finished-at="2025-08-04T22:32:31 CDT" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:31 CDT" name="browser" finished-at="2025-08-04T22:32:32 CDT" duration-ms="976" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method is-config="true" signature="Home()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:32 CDT" name="Home" finished-at="2025-08-04T22:32:33 CDT" duration-ms="1101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Home -->
+        <test-method signature="DropdownLinkedlst()[pri:10, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:33 CDT" name="DropdownLinkedlst" finished-at="2025-08-04T22:32:33 CDT" duration-ms="667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropdownLinkedlst -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:33 CDT" name="tearDown" finished-at="2025-08-04T22:32:33 CDT" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:33 CDT" name="browser" finished-at="2025-08-04T22:32:34 CDT" duration-ms="910" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method is-config="true" signature="Home()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:34 CDT" name="Home" finished-at="2025-08-04T22:32:36 CDT" duration-ms="1142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Home -->
+        <test-method signature="DropdownStack()[pri:11, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:36 CDT" name="DropdownStack" finished-at="2025-08-04T22:32:36 CDT" duration-ms="689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropdownStack -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:36 CDT" name="tearDown" finished-at="2025-08-04T22:32:36 CDT" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:36 CDT" name="browser" finished-at="2025-08-04T22:32:37 CDT" duration-ms="977" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method is-config="true" signature="Home()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:37 CDT" name="Home" finished-at="2025-08-04T22:32:39 CDT" duration-ms="1216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Home -->
+        <test-method signature="DropdownQueue()[pri:12, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:39 CDT" name="DropdownQueue" finished-at="2025-08-04T22:32:39 CDT" duration-ms="669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropdownQueue -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:39 CDT" name="tearDown" finished-at="2025-08-04T22:32:40 CDT" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:40 CDT" name="browser" finished-at="2025-08-04T22:32:41 CDT" duration-ms="978" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method is-config="true" signature="Home()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:41 CDT" name="Home" finished-at="2025-08-04T22:32:42 CDT" duration-ms="1164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Home -->
+        <test-method signature="DropdownTree()[pri:13, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:42 CDT" name="DropdownTree" finished-at="2025-08-04T22:32:42 CDT" duration-ms="744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropdownTree -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:42 CDT" name="tearDown" finished-at="2025-08-04T22:32:43 CDT" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:43 CDT" name="browser" finished-at="2025-08-04T22:32:44 CDT" duration-ms="938" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method is-config="true" signature="Home()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:44 CDT" name="Home" finished-at="2025-08-04T22:32:45 CDT" duration-ms="1366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Home -->
+        <test-method signature="DropdownGraph()[pri:14, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:45 CDT" name="DropdownGraph" finished-at="2025-08-04T22:32:46 CDT" duration-ms="698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropdownGraph -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:46 CDT" name="tearDown" finished-at="2025-08-04T22:32:46 CDT" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:46 CDT" name="browser" finished-at="2025-08-04T22:32:47 CDT" duration-ms="1092" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method is-config="true" signature="Home()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:47 CDT" name="Home" finished-at="2025-08-04T22:32:48 CDT" duration-ms="1305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Home -->
+        <test-method signature="clickregister()[pri:15, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:48 CDT" name="clickregister" finished-at="2025-08-04T22:32:49 CDT" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickregister -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.HomeTest@6580cfdd]" started-at="2025-08-04T22:32:49 CDT" name="tearDown" finished-at="2025-08-04T22:32:49 CDT" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testMethodsPackage.HomeTest -->
     </test> <!-- chrometest  -->
-    <test started-at="2025-08-04T00:59:26 CDT" name="firefoxtest" finished-at="2025-08-04T00:59:36 CDT" duration-ms="9525">
-      <class name="testMethodsPackage.LaunchTest">
-        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.LaunchTest@654f0d9c]" started-at="2025-08-04T00:59:26 CDT" name="browser" finished-at="2025-08-04T00:59:30 CDT" duration-ms="3574" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser -->
-        <test-method signature="checkmsg()[pri:0, instance:testMethodsPackage.LaunchTest@654f0d9c]" started-at="2025-08-04T00:59:30 CDT" name="checkmsg" finished-at="2025-08-04T00:59:30 CDT" duration-ms="95" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkmsg -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.LaunchTest@654f0d9c]" started-at="2025-08-04T00:59:30 CDT" name="tearDown" finished-at="2025-08-04T00:59:32 CDT" duration-ms="1442" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:testMethodsPackage.LaunchTest@654f0d9c]" started-at="2025-08-04T00:59:32 CDT" name="browser" finished-at="2025-08-04T00:59:35 CDT" duration-ms="3049" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser -->
-        <test-method signature="clickgetstarted()[pri:0, instance:testMethodsPackage.LaunchTest@654f0d9c]" started-at="2025-08-04T00:59:35 CDT" name="clickgetstarted" finished-at="2025-08-04T00:59:35 CDT" duration-ms="432" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickgetstarted -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.LaunchTest@654f0d9c]" started-at="2025-08-04T00:59:35 CDT" name="tearDown" finished-at="2025-08-04T00:59:36 CDT" duration-ms="877" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testMethodsPackage.LaunchTest -->
-    </test> <!-- firefoxtest -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">15 methods, 1 failed,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.HomeTest" class="method navigator-link" hash-for-method="DropdownDS">DropdownDS</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +117,72 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.LaunchTest" class="method navigator-link" hash-for-method="checkmsg">checkmsg</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.HomeTest" class="method navigator-link" hash-for-method="ClickArrayBtn">ClickArrayBtn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.LaunchTest" class="method navigator-link" hash-for-method="checkmsg">checkmsg</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.HomeTest" class="method navigator-link" hash-for-method="ClickGraphBtn">ClickGraphBtn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.LaunchTest" class="method navigator-link" hash-for-method="clickgetstarted">clickgetstarted</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.HomeTest" class="method navigator-link" hash-for-method="ClickLinkedlstBtn">ClickLinkedlstBtn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.LaunchTest" class="method navigator-link" hash-for-method="clickgetstarted">clickgetstarted</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.HomeTest" class="method navigator-link" hash-for-method="ClickQueueBtn">ClickQueueBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.HomeTest" class="method navigator-link" hash-for-method="ClickStacktBtn">ClickStacktBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.HomeTest" class="method navigator-link" hash-for-method="ClickTreeBtn">ClickTreeBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.HomeTest" class="method navigator-link" hash-for-method="ClicksDataStBtn">ClicksDataStBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.HomeTest" class="method navigator-link" hash-for-method="DropdownArray">DropdownArray</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.HomeTest" class="method navigator-link" hash-for-method="DropdownGraph">DropdownGraph</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.HomeTest" class="method navigator-link" hash-for-method="DropdownLinkedlst">DropdownLinkedlst</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.HomeTest" class="method navigator-link" hash-for-method="DropdownQueue">DropdownQueue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.HomeTest" class="method navigator-link" hash-for-method="DropdownStack">DropdownStack</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.HomeTest" class="method navigator-link" hash-for-method="DropdownTree">DropdownTree</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testMethodsPackage.HomeTest" class="method navigator-link" hash-for-method="clickregister">clickregister</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -133,38 +197,155 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testMethodsPackage.LaunchTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">testMethodsPackage.HomeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkmsg">
-                  </a> <!-- checkmsg -->
-                  <span class="method-name">checkmsg</span>
+                  <a name="DropdownDS">
+                  </a> <!-- DropdownDS -->
+                  <span class="method-name">DropdownDS</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;alert alert-primary&apos;]&quot;}
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b3cc7ec806ce24f5cb3b231047c07051, findElement {using=xpath, value=//*[@class=&apos;alert alert-primary&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55974}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55974/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b3cc7ec806ce24f5cb3b231047c07051
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
+	at pageObjects.HomePage.notloggedinmesg(HomePage.java:177)
+	at testMethodsPackage.HomeTest.DropdownDS(HomeTest.java:125)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testMethodsPackage.HomeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickArrayBtn">
+                  </a> <!-- ClickArrayBtn -->
+                  <span class="method-name">ClickArrayBtn</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="checkmsg">
-                  </a> <!-- checkmsg -->
-                  <span class="method-name">checkmsg</span>
+                  <a name="ClickGraphBtn">
+                  </a> <!-- ClickGraphBtn -->
+                  <span class="method-name">ClickGraphBtn</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="clickgetstarted">
-                  </a> <!-- clickgetstarted -->
-                  <span class="method-name">clickgetstarted</span>
+                  <a name="ClickLinkedlstBtn">
+                  </a> <!-- ClickLinkedlstBtn -->
+                  <span class="method-name">ClickLinkedlstBtn</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="clickgetstarted">
-                  </a> <!-- clickgetstarted -->
-                  <span class="method-name">clickgetstarted</span>
+                  <a name="ClickQueueBtn">
+                  </a> <!-- ClickQueueBtn -->
+                  <span class="method-name">ClickQueueBtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickStacktBtn">
+                  </a> <!-- ClickStacktBtn -->
+                  <span class="method-name">ClickStacktBtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickTreeBtn">
+                  </a> <!-- ClickTreeBtn -->
+                  <span class="method-name">ClickTreeBtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClicksDataStBtn">
+                  </a> <!-- ClicksDataStBtn -->
+                  <span class="method-name">ClicksDataStBtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DropdownArray">
+                  </a> <!-- DropdownArray -->
+                  <span class="method-name">DropdownArray</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DropdownGraph">
+                  </a> <!-- DropdownGraph -->
+                  <span class="method-name">DropdownGraph</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DropdownLinkedlst">
+                  </a> <!-- DropdownLinkedlst -->
+                  <span class="method-name">DropdownLinkedlst</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DropdownQueue">
+                  </a> <!-- DropdownQueue -->
+                  <span class="method-name">DropdownQueue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DropdownStack">
+                  </a> <!-- DropdownStack -->
+                  <span class="method-name">DropdownStack</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DropdownTree">
+                  </a> <!-- DropdownTree -->
+                  <span class="method-name">DropdownTree</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickregister">
+                  </a> <!-- clickregister -->
+                  <span class="method-name">clickregister</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -179,16 +360,10 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;firefoxtest&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testMethodsPackage.LaunchTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- firefoxtest --&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;chrometest &quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testMethodsPackage.LaunchTest&quot;/&gt;
+      &lt;class name=&quot;testMethodsPackage.HomeTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- chrometest  --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -201,9 +376,6 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
-              <li>
-                <span class="test-name">firefoxtest (1 class)</span>
-              </li>
               <li>
                 <span class="test-name">chrometest  (1 class)</span>
               </li>
@@ -231,28 +403,72 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'clickgetstarted')
-data.setCell(0, 2, 'testMethodsPackage.LaunchTest')
-data.setCell(0, 3, 547);
+data.setCell(0, 1, 'DropdownDS')
+data.setCell(0, 2, 'testMethodsPackage.HomeTest')
+data.setCell(0, 3, 10173);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'clickgetstarted')
-data.setCell(1, 2, 'testMethodsPackage.LaunchTest')
-data.setCell(1, 3, 432);
+data.setCell(1, 1, 'DropdownTree')
+data.setCell(1, 2, 'testMethodsPackage.HomeTest')
+data.setCell(1, 3, 744);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'checkmsg')
-data.setCell(2, 2, 'testMethodsPackage.LaunchTest')
-data.setCell(2, 3, 95);
+data.setCell(2, 1, 'DropdownGraph')
+data.setCell(2, 2, 'testMethodsPackage.HomeTest')
+data.setCell(2, 3, 698);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'checkmsg')
-data.setCell(3, 2, 'testMethodsPackage.LaunchTest')
-data.setCell(3, 3, 63);
+data.setCell(3, 1, 'DropdownStack')
+data.setCell(3, 2, 'testMethodsPackage.HomeTest')
+data.setCell(3, 3, 689);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'DropdownQueue')
+data.setCell(4, 2, 'testMethodsPackage.HomeTest')
+data.setCell(4, 3, 669);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'DropdownLinkedlst')
+data.setCell(5, 2, 'testMethodsPackage.HomeTest')
+data.setCell(5, 3, 667);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'ClickArrayBtn')
+data.setCell(6, 2, 'testMethodsPackage.HomeTest')
+data.setCell(6, 3, 638);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ClickGraphBtn')
+data.setCell(7, 2, 'testMethodsPackage.HomeTest')
+data.setCell(7, 3, 619);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'ClickLinkedlstBtn')
+data.setCell(8, 2, 'testMethodsPackage.HomeTest')
+data.setCell(8, 3, 605);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'DropdownArray')
+data.setCell(9, 2, 'testMethodsPackage.HomeTest')
+data.setCell(9, 3, 591);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'ClicksDataStBtn')
+data.setCell(10, 2, 'testMethodsPackage.HomeTest')
+data.setCell(10, 3, 588);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'ClickTreeBtn')
+data.setCell(11, 2, 'testMethodsPackage.HomeTest')
+data.setCell(11, 3, 588);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'ClickStacktBtn')
+data.setCell(12, 2, 'testMethodsPackage.HomeTest')
+data.setCell(12, 3, 538);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'ClickQueueBtn')
+data.setCell(13, 2, 'testMethodsPackage.HomeTest')
+data.setCell(13, 3, 537);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'clickregister')
+data.setCell(14, 2, 'testMethodsPackage.HomeTest')
+data.setCell(14, 3, 302);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 57 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -278,54 +494,248 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testMethodsPackage.LaunchTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">browser(firefox)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">testMethodsPackage.HomeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browser(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Home</span>
+                <span class="method-start">1869 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">checkmsg</span>
-                <span class="method-start">2037 ms</span>
+                <span class="method-name">ClicksDataStBtn</span>
+                <span class="method-start">3183 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">2102 ms</span>
+                <span class="method-start">3774 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browser(chrome)</span>
-                <span class="method-start">2274 ms</span>
+                <span class="method-start">4009 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Home</span>
+                <span class="method-start">4934 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">checkmsg</span>
-                <span class="method-start">3574 ms</span>
+                <span class="method-name">ClickArrayBtn</span>
+                <span class="method-start">6131 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3674 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">clickgetstarted</span>
-                <span class="method-start">3811 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">4360 ms</span>
+                <span class="method-start">6770 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">browser(firefox)</span>
-                <span class="method-start">5118 ms</span>
+                <span class="method-name">browser(chrome)</span>
+                <span class="method-start">7016 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Home</span>
+                <span class="method-start">8012 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">clickgetstarted</span>
-                <span class="method-start">8168 ms</span>
+                <span class="method-name">ClickLinkedlstBtn</span>
+                <span class="method-start">9206 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8602 ms</span>
+                <span class="method-start">9812 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browser(chrome)</span>
+                <span class="method-start">10039 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Home</span>
+                <span class="method-start">11014 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ClickStacktBtn</span>
+                <span class="method-start">12058 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">12598 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browser(chrome)</span>
+                <span class="method-start">12823 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Home</span>
+                <span class="method-start">13863 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ClickQueueBtn</span>
+                <span class="method-start">15324 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15862 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browser(chrome)</span>
+                <span class="method-start">16072 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Home</span>
+                <span class="method-start">17049 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ClickTreeBtn</span>
+                <span class="method-start">18242 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">18831 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browser(chrome)</span>
+                <span class="method-start">19050 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Home</span>
+                <span class="method-start">19975 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ClickGraphBtn</span>
+                <span class="method-start">21388 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22008 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browser(chrome)</span>
+                <span class="method-start">22212 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Home</span>
+                <span class="method-start">23105 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DropdownDS</span>
+                <span class="method-start">24927 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">35104 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browser(chrome)</span>
+                <span class="method-start">35861 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Home</span>
+                <span class="method-start">36979 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DropdownArray</span>
+                <span class="method-start">38206 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">38798 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browser(chrome)</span>
+                <span class="method-start">39032 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Home</span>
+                <span class="method-start">40008 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DropdownLinkedlst</span>
+                <span class="method-start">41110 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">41778 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browser(chrome)</span>
+                <span class="method-start">41969 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Home</span>
+                <span class="method-start">42880 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DropdownStack</span>
+                <span class="method-start">44022 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">44711 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browser(chrome)</span>
+                <span class="method-start">44925 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Home</span>
+                <span class="method-start">45902 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DropdownQueue</span>
+                <span class="method-start">47118 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">47788 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browser(chrome)</span>
+                <span class="method-start">48020 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Home</span>
+                <span class="method-start">48999 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DropdownTree</span>
+                <span class="method-start">50163 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">50908 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browser(chrome)</span>
+                <span class="method-start">51150 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Home</span>
+                <span class="method-start">52088 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DropdownGraph</span>
+                <span class="method-start">53454 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">54153 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browser(chrome)</span>
+                <span class="method-start">54381 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Home</span>
+                <span class="method-start">55473 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickregister</span>
+                <span class="method-start">56778 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">57082 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
