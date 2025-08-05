@@ -1,65 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="3" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-04T15:52:05 GMT-04:00" name="Suite_dsAlgo" finished-at="2025-08-04T15:52:54 GMT-04:00" duration-ms="49631">
+  <suite started-at="2025-08-05T16:12:59 GMT-04:00" name="Suite_dsAlgo" finished-at="2025-08-05T16:13:37 GMT-04:00" duration-ms="38327">
     <groups>
     </groups>
-    <test started-at="2025-08-04T15:52:05 GMT-04:00" name="Test_All_Modules_chrome" finished-at="2025-08-04T15:52:53 GMT-04:00" duration-ms="48581">
+    <test started-at="2025-08-05T16:12:59 GMT-04:00" name="Test_All_Modules_edge" finished-at="2025-08-05T16:13:37 GMT-04:00" duration-ms="38327">
       <class name="testCases.Stack">
-        <test-method is-config="true" signature="open_stack_page(java.lang.String)[pri:0, instance:testCases.Stack@5767b2af]" started-at="2025-08-04T15:52:05 GMT-04:00" name="open_stack_page" finished-at="2025-08-04T15:52:19 GMT-04:00" duration-ms="14672" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_stack_page -->
-        <test-method signature="stackOperations()[pri:1, instance:testCases.Stack@5767b2af]" started-at="2025-08-04T15:52:19 GMT-04:00" name="stackOperations" finished-at="2025-08-04T15:52:22 GMT-04:00" duration-ms="2937" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stackOperations -->
-        <test-method signature="StackoperationsCodeEditor()[pri:2, instance:testCases.Stack@5767b2af]" started-at="2025-08-04T15:52:34 GMT-04:00" name="StackoperationsCodeEditor" finished-at="2025-08-04T15:52:35 GMT-04:00" depends-on-methods="testCases.Stack.stackOperations" duration-ms="1166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsCodeEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@5767b2af]" started-at="2025-08-04T15:52:35 GMT-04:00" name="teardownDriver" finished-at="2025-08-04T15:52:51 GMT-04:00" duration-ms="16410" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-      </class> <!-- testCases.Stack -->
-      <class name="testCases.Queue">
-        <test-method is-config="true" signature="open_stack_page(java.lang.String)[pri:0, instance:testCases.Queue@ba1f559]" started-at="2025-08-04T15:52:22 GMT-04:00" name="open_stack_page" finished-at="2025-08-04T15:52:33 GMT-04:00" duration-ms="10812" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_stack_page -->
-        <test-method signature="queueImplementation()[pri:1, instance:testCases.Queue@ba1f559]" started-at="2025-08-04T15:52:33 GMT-04:00" name="queueImplementation" finished-at="2025-08-04T15:52:34 GMT-04:00" duration-ms="578" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queueImplementation -->
-        <test-method signature="queueImplementationCodeEditor()[pri:2, instance:testCases.Queue@ba1f559]" started-at="2025-08-04T15:52:51 GMT-04:00" name="queueImplementationCodeEditor" finished-at="2025-08-04T15:52:52 GMT-04:00" depends-on-methods="testCases.Queue.queueImplementation" duration-ms="864" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queueImplementationCodeEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@ba1f559]" started-at="2025-08-04T15:52:52 GMT-04:00" name="teardownDriver" finished-at="2025-08-04T15:52:53 GMT-04:00" duration-ms="987" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-      </class> <!-- testCases.Queue -->
-    </test> <!-- Test_All_Modules_chrome -->
-    <test started-at="2025-08-04T15:52:05 GMT-04:00" name="Test_All_Modules_edge" finished-at="2025-08-04T15:52:54 GMT-04:00" duration-ms="49312">
-      <class name="testCases.Stack">
-        <test-method is-config="true" signature="open_stack_page(java.lang.String)[pri:0, instance:testCases.Stack@1f86099a]" started-at="2025-08-04T15:52:05 GMT-04:00" name="open_stack_page" finished-at="2025-08-04T15:52:18 GMT-04:00" duration-ms="12998" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@56193c7d]" started-at="2025-08-05T16:12:59 GMT-04:00" name="open_website" finished-at="2025-08-05T16:13:25 GMT-04:00" duration-ms="25756" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,22 +17,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open_stack_page -->
-        <test-method signature="stackOperations()[pri:1, instance:testCases.Stack@1f86099a]" started-at="2025-08-04T15:52:18 GMT-04:00" name="stackOperations" finished-at="2025-08-04T15:52:18 GMT-04:00" duration-ms="678" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stackOperations -->
-        <test-method signature="StackoperationsCodeEditor()[pri:2, instance:testCases.Stack@1f86099a]" started-at="2025-08-04T15:52:30 GMT-04:00" name="StackoperationsCodeEditor" finished-at="2025-08-04T15:52:31 GMT-04:00" depends-on-methods="testCases.Stack.stackOperations" duration-ms="1749" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsCodeEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@1f86099a]" started-at="2025-08-04T15:52:32 GMT-04:00" name="teardownDriver" finished-at="2025-08-04T15:52:50 GMT-04:00" duration-ms="18420" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-      </class> <!-- testCases.Stack -->
-      <class name="testCases.Queue">
-        <test-method is-config="true" signature="open_stack_page(java.lang.String)[pri:0, instance:testCases.Queue@77bb0ab5]" started-at="2025-08-04T15:52:19 GMT-04:00" name="open_stack_page" finished-at="2025-08-04T15:52:28 GMT-04:00" duration-ms="9663" status="PASS">
+        </test-method> <!-- open_website -->
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@56193c7d]" started-at="2025-08-05T16:12:59 GMT-04:00" name="open_website" finished-at="2025-08-05T16:13:25 GMT-04:00" duration-ms="26235" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,72 +28,326 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open_stack_page -->
-        <test-method signature="queueImplementation()[pri:1, instance:testCases.Queue@77bb0ab5]" started-at="2025-08-04T15:52:28 GMT-04:00" name="queueImplementation" finished-at="2025-08-04T15:52:30 GMT-04:00" duration-ms="1278" status="PASS">
+        </test-method> <!-- open_website -->
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@56193c7d]" started-at="2025-08-05T16:12:59 GMT-04:00" name="open_website" finished-at="2025-08-05T16:13:25 GMT-04:00" duration-ms="25881" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_website -->
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@56193c7d]" started-at="2025-08-05T16:13:25 GMT-04:00" name="stack_page" finished-at="2025-08-05T16:13:25 GMT-04:00" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stack_page -->
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@56193c7d]" started-at="2025-08-05T16:13:25 GMT-04:00" name="stack_page" finished-at="2025-08-05T16:13:25 GMT-04:00" duration-ms="326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stack_page -->
+        <test-method signature="open_stac_page()[pri:1, instance:testCases.Stack@56193c7d]" started-at="2025-08-05T16:13:25 GMT-04:00" name="open_stac_page" finished-at="2025-08-05T16:13:27 GMT-04:00" duration-ms="1880" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: MicrosoftEdge=138.0.3351.121)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [15d97560074c1eda7aea91a2467b85d0, clickElement {id=f.31A36CBF46EF982A24CF08E6A3CF1160.d.2DDF204A67696AC27FE3D07C14B4B68B.e.22}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.121, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51893}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51893/devtoo..., se:cdpVersion: 138.0.3351.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (15d97560074c1eda7aea91a2467b85d0)] -> xpath: //h5[text()='Stack']/../../..//a[text()='Get Started']]
+Session ID: 15d97560074c1eda7aea91a2467b85d0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=138.0.3351.121)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [15d97560074c1eda7aea91a2467b85d0, clickElement {id=f.31A36CBF46EF982A24CF08E6A3CF1160.d.2DDF204A67696AC27FE3D07C14B4B68B.e.22}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.121, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51893}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51893/devtoo..., se:cdpVersion: 138.0.3351.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (15d97560074c1eda7aea91a2467b85d0)] -> xpath: //h5[text()='Stack']/../../..//a[text()='Get Started']]
+Session ID: 15d97560074c1eda7aea91a2467b85d0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+at pageFactory.Stack_pf.stack_btn(Stack_pf.java:56)
+at testCases.Stack.open_stac_page(Stack.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_stac_page -->
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@56193c7d]" started-at="2025-08-05T16:13:25 GMT-04:00" name="stack_page" finished-at="2025-08-05T16:13:25 GMT-04:00" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stack_page -->
+        <test-method signature="stackOperations()[pri:2, instance:testCases.Stack@56193c7d]" started-at="2025-08-05T16:13:25 GMT-04:00" name="stackOperations" finished-at="2025-08-05T16:13:27 GMT-04:00" duration-ms="1854" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: MicrosoftEdge=138.0.3351.121)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [15d97560074c1eda7aea91a2467b85d0, clickElement {id=f.31A36CBF46EF982A24CF08E6A3CF1160.d.2DDF204A67696AC27FE3D07C14B4B68B.e.22}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.121, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51893}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51893/devtoo..., se:cdpVersion: 138.0.3351.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (15d97560074c1eda7aea91a2467b85d0)] -> xpath: //h5[text()='Stack']/../../..//a[text()='Get Started']]
+Session ID: 15d97560074c1eda7aea91a2467b85d0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=138.0.3351.121)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [15d97560074c1eda7aea91a2467b85d0, clickElement {id=f.31A36CBF46EF982A24CF08E6A3CF1160.d.2DDF204A67696AC27FE3D07C14B4B68B.e.22}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.121, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51893}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51893/devtoo..., se:cdpVersion: 138.0.3351.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (15d97560074c1eda7aea91a2467b85d0)] -> xpath: //h5[text()='Stack']/../../..//a[text()='Get Started']]
+Session ID: 15d97560074c1eda7aea91a2467b85d0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+at pageFactory.Stack_pf.stack_btn(Stack_pf.java:56)
+at testCases.Stack.stackOperations(Stack.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stackOperations -->
+        <test-method signature="StackoperationsCodeEditor()[pri:3, instance:testCases.Stack@56193c7d]" started-at="2025-08-05T16:13:25 GMT-04:00" name="StackoperationsCodeEditor" finished-at="2025-08-05T16:13:29 GMT-04:00" duration-ms="3497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StackoperationsCodeEditor -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@56193c7d]" started-at="2025-08-05T16:13:27 GMT-04:00" name="teardownDriver" finished-at="2025-08-05T16:13:30 GMT-04:00" duration-ms="3495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownDriver -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@56193c7d]" started-at="2025-08-05T16:13:27 GMT-04:00" name="teardownDriver" finished-at="2025-08-05T16:13:34 GMT-04:00" duration-ms="6736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownDriver -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@56193c7d]" started-at="2025-08-05T16:13:29 GMT-04:00" name="teardownDriver" finished-at="2025-08-05T16:13:34 GMT-04:00" duration-ms="5626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownDriver -->
+      </class> <!-- testCases.Stack -->
+      <class name="testCases.Queue">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@18388a3c]" started-at="2025-08-05T16:12:59 GMT-04:00" name="open_website" finished-at="2025-08-05T16:13:25 GMT-04:00" duration-ms="26170" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_website -->
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@18388a3c]" started-at="2025-08-05T16:12:59 GMT-04:00" name="open_website" finished-at="2025-08-05T16:13:22 GMT-04:00" duration-ms="23275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_website -->
+        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@18388a3c]" started-at="2025-08-05T16:13:23 GMT-04:00" name="queue_page" finished-at="2025-08-05T16:13:23 GMT-04:00" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- queue_page -->
+        <test-method signature="queueImplementation()[pri:2, instance:testCases.Queue@18388a3c]" started-at="2025-08-05T16:13:23 GMT-04:00" name="queueImplementation" finished-at="2025-08-05T16:13:30 GMT-04:00" duration-ms="7240" status="FAIL">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [43c9eaac7fbcb3e59022e9dfb2250910, isElementEnabled [id]]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.121, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51894}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51894/devtoo..., se:cdpVersion: 138.0.3351.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (43c9eaac7fbcb3e59022e9dfb2250910)] -> xpath: //a[text()='Implementation of Queue in Python']]
+Session ID: 43c9eaac7fbcb3e59022e9dfb2250910]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [43c9eaac7fbcb3e59022e9dfb2250910, isElementEnabled [id]]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.121, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51894}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51894/devtoo..., se:cdpVersion: 138.0.3351.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (43c9eaac7fbcb3e59022e9dfb2250910)] -> xpath: //a[text()='Implementation of Queue in Python']]
+Session ID: 43c9eaac7fbcb3e59022e9dfb2250910
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:571)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:181)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy30.isEnabled(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:658)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at pageFactory.Queue_pf.implementation_queue_python_btn(Queue_pf.java:74)
+at testCases.Queue.queueImplementation(Queue.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@6dabeb28 rejected from java.util.concurrent.ThreadPoolExecutor@2117b5ac[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 134]
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+... 3 more
+Caused by: java.io.IOException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@6dabeb28 rejected from java.util.concurrent.ThreadPoolExecutor@2117b5ac[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 134]
+at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:969)
+at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
+... 8 more
+Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@6dabeb28 rejected from java.util.concurrent.ThreadPoolExecutor@2117b5ac[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 134]
+at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.ensureExecutedAsync(HttpClientImpl.java:183)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:175)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:282)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:251)
+at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.onReadError(Http1AsyncReceiver.java:516)
+at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onComplete(Http1AsyncReceiver.java:601)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadSubscription.signalCompletion(SocketTube.java:648)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:853)
+at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1470)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1415)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1415)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queueImplementation -->
-        <test-method signature="queueImplementationCodeEditor()[pri:2, instance:testCases.Queue@77bb0ab5]" started-at="2025-08-04T15:52:50 GMT-04:00" name="queueImplementationCodeEditor" finished-at="2025-08-04T15:52:51 GMT-04:00" depends-on-methods="testCases.Queue.queueImplementation" duration-ms="858" status="PASS">
+        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@18388a3c]" started-at="2025-08-05T16:13:25 GMT-04:00" name="queue_page" finished-at="2025-08-05T16:13:25 GMT-04:00" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- queue_page -->
+        <test-method signature="open_queue_page()[pri:1, instance:testCases.Queue@18388a3c]" started-at="2025-08-05T16:13:25 GMT-04:00" name="open_queue_page" finished-at="2025-08-05T16:13:26 GMT-04:00" duration-ms="1057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_queue_page -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@18388a3c]" started-at="2025-08-05T16:13:26 GMT-04:00" name="teardownDriver" finished-at="2025-08-05T16:13:30 GMT-04:00" duration-ms="4149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownDriver -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@18388a3c]" started-at="2025-08-05T16:13:30 GMT-04:00" name="teardownDriver" finished-at="2025-08-05T16:13:35 GMT-04:00" duration-ms="4201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownDriver -->
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@18388a3c]" started-at="2025-08-05T16:13:30 GMT-04:00" name="open_website" finished-at="2025-08-05T16:13:35 GMT-04:00" duration-ms="4363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_website -->
+        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@18388a3c]" started-at="2025-08-05T16:13:35 GMT-04:00" name="queue_page" finished-at="2025-08-05T16:13:35 GMT-04:00" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- queue_page -->
+        <test-method signature="queueImplementationCodeEditor()[pri:3, instance:testCases.Queue@18388a3c]" started-at="2025-08-05T16:13:35 GMT-04:00" name="queueImplementationCodeEditor" finished-at="2025-08-05T16:13:36 GMT-04:00" duration-ms="1668" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queueImplementationCodeEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@77bb0ab5]" started-at="2025-08-04T15:52:51 GMT-04:00" name="teardownDriver" finished-at="2025-08-04T15:52:54 GMT-04:00" duration-ms="3069" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@18388a3c]" started-at="2025-08-05T16:13:36 GMT-04:00" name="teardownDriver" finished-at="2025-08-05T16:13:37 GMT-04:00" duration-ms="523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
       </class> <!-- testCases.Queue -->
     </test> <!-- Test_All_Modules_edge -->
-    <test started-at="2025-08-04T15:52:05 GMT-04:00" name="Test_All_Modules_firefox" finished-at="2025-08-04T15:52:54 GMT-04:00" duration-ms="49631">
-      <class name="testCases.Stack">
-        <test-method is-config="true" signature="open_stack_page(java.lang.String)[pri:0, instance:testCases.Stack@7bc9e6ab]" started-at="2025-08-04T15:52:05 GMT-04:00" name="open_stack_page" finished-at="2025-08-04T15:52:33 GMT-04:00" duration-ms="27993" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_stack_page -->
-        <test-method signature="stackOperations()[pri:1, instance:testCases.Stack@7bc9e6ab]" started-at="2025-08-04T15:52:33 GMT-04:00" name="stackOperations" finished-at="2025-08-04T15:52:34 GMT-04:00" duration-ms="1344" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stackOperations -->
-        <test-method signature="StackoperationsCodeEditor()[pri:2, instance:testCases.Stack@7bc9e6ab]" started-at="2025-08-04T15:52:46 GMT-04:00" name="StackoperationsCodeEditor" finished-at="2025-08-04T15:52:46 GMT-04:00" depends-on-methods="testCases.Stack.stackOperations" duration-ms="868" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsCodeEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@7bc9e6ab]" started-at="2025-08-04T15:52:46 GMT-04:00" name="teardownDriver" finished-at="2025-08-04T15:52:52 GMT-04:00" duration-ms="5195" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-      </class> <!-- testCases.Stack -->
-      <class name="testCases.Queue">
-        <test-method is-config="true" signature="open_stack_page(java.lang.String)[pri:0, instance:testCases.Queue@5488b5c5]" started-at="2025-08-04T15:52:34 GMT-04:00" name="open_stack_page" finished-at="2025-08-04T15:52:44 GMT-04:00" duration-ms="10255" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_stack_page -->
-        <test-method signature="queueImplementation()[pri:1, instance:testCases.Queue@5488b5c5]" started-at="2025-08-04T15:52:44 GMT-04:00" name="queueImplementation" finished-at="2025-08-04T15:52:46 GMT-04:00" duration-ms="1277" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queueImplementation -->
-        <test-method signature="queueImplementationCodeEditor()[pri:2, instance:testCases.Queue@5488b5c5]" started-at="2025-08-04T15:52:52 GMT-04:00" name="queueImplementationCodeEditor" finished-at="2025-08-04T15:52:52 GMT-04:00" depends-on-methods="testCases.Queue.queueImplementation" duration-ms="771" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queueImplementationCodeEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@5488b5c5]" started-at="2025-08-04T15:52:52 GMT-04:00" name="teardownDriver" finished-at="2025-08-04T15:52:54 GMT-04:00" duration-ms="1758" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-      </class> <!-- testCases.Queue -->
-    </test> <!-- Test_All_Modules_firefox -->
   </suite> <!-- Suite_dsAlgo -->
 </testng-results>

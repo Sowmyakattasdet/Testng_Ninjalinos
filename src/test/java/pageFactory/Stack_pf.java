@@ -8,7 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import driverFactory.DriverFactory_TestNG;
 
 public class Stack_pf {
 	private WebDriver tldriver;
@@ -36,9 +39,9 @@ public class Stack_pf {
 
 
 	
-	public Stack_pf(WebDriver tldriver) {
-
-		this.tldriver = tldriver;
+	public Stack_pf() {
+		this.tldriver = DriverFactory_TestNG.getDriver();
+		//this.tldriver = driver;
 		this.action = new Actions(tldriver);
 		PageFactory.initElements(tldriver, this);
 		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
@@ -47,17 +50,19 @@ public class Stack_pf {
 
 
 	public void stack_btn() {
-		((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", stackBtn);
-		// action.scrollToElement(stackBtn).perform();
-		action.click(stackBtn).perform();
+		//((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", stackBtn);
+		//action.scrollToElement(stackBtn).perform();
+		//action.click(stackBtn).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(stackBtn)).click();
 
 	}
 
 	public void opreations_stack_btn() {
-		((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", operationsStackBtn);
+		//((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", operationsStackBtn);
 
-		// action.scrollToElement(operationsStackBtn).perform();
-		action.click(operationsStackBtn).perform();
+		//action.scrollToElement(operationsStackBtn).perform();
+		//action.click(operationsStackBtn).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(operationsStackBtn)).click();
 
 	}
 
@@ -76,9 +81,10 @@ public class Stack_pf {
 	}
 
 	public void tryhere_stack() {
-		((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", tryHereStack);
-		// action.scrollToElement(tryHereStack).perform();
-		action.click(tryHereStack).perform();
+		//((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", tryHereStack);
+		//action.scrollToElement(tryHereStack).perform();
+		//action.click(tryHereStack).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(tryHereStack)).click();
 	}
 
 	public String get_current_url() {

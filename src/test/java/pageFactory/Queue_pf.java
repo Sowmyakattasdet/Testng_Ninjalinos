@@ -11,6 +11,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import driverFactory.DriverFactory_TestNG;
+
 public class Queue_pf {
 
 	private WebDriver tldriver;
@@ -41,9 +43,9 @@ public class Queue_pf {
 
 
 
-	public Queue_pf(WebDriver tldriver) {
-
-		this.tldriver = tldriver;
+	public Queue_pf() {
+		this.tldriver = DriverFactory_TestNG.getDriver();
+		//this.tldriver = driver;
 		this.action = new Actions(tldriver);
 		PageFactory.initElements(tldriver, this);
 		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
@@ -57,17 +59,19 @@ public class Queue_pf {
 	}
 
 	public void queue_btn() {
-		((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", QueueBtn);
+		//((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", QueueBtn);
 
 		//action.scrollToElement(QueueBtn).perform();
-		action.click(QueueBtn).perform();
+		//action.click(QueueBtn).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(QueueBtn)).click();
 	}
 
 	public void implementation_queue_python_btn() {
-		((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", implementationQueuePythonBtn);
+		//((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", implementationQueuePythonBtn);
 
 		//action.scrollToElement(implementationQueuePythonBtn).perform();
-		action.click(implementationQueuePythonBtn).perform();
+		//action.click(implementationQueuePythonBtn).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(implementationQueuePythonBtn)).click();
 	}
 
 	public void implementation_collection_btn() {
@@ -79,16 +83,16 @@ public class Queue_pf {
 
 	public void implementation_array_btn() {
 
-		((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", implementationUseArrayBtn);
+		//((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", implementationUseArrayBtn);
 		//action.scrollToElement(implementationUseArrayBtn).perform();
-		action.click(implementationUseArrayBtn).perform();
+		//action.click(implementationUseArrayBtn).perform();
 	}
 
 	public void queue_operations_btn() {
 
-		((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", queueOperationsBtn);
+		//((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", queueOperationsBtn);
 		//action.scrollToElement(queueOperationsBtn).perform();
-		action.click(queueOperationsBtn).perform();
+		//action.click(queueOperationsBtn).perform();
 	}
 
 	public void practice_queue() {
@@ -100,9 +104,10 @@ public class Queue_pf {
 
 	public void tryhere_queue() {
 
-		((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", tryHereQueue);
+		//((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", tryHereQueue);
 		//action.scrollToElement(tryHereQueue).perform();
-		action.click(tryHereQueue).perform();
+		//action.click(tryHereQueue).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(tryHereQueue)).click();
 	}
 
 	public String get_current_url() {

@@ -4,17 +4,26 @@
   <listeners>
     <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
   </listeners>
-  <test thread-count="5" parallel="methods" name="Test_All_Modules_firefox(failed)">
-    <parameter name="browser" value="firefox"/>
+  <test thread-count="5" parallel="methods" name="Test_All_Modules_edge(failed)">
+    <parameter name="browser" value="edge"/>
     <classes>
       <class name="testCases.Queue">
         <methods>
-          <include name="queueImplementationCodeEditor"/>
-          <include name="queueImplementation"/>
+          <include name="queue_page"/>
           <include name="teardownDriver"/>
-          <include name="open_stack_page"/>
+          <include name="open_website"/>
+          <include name="queueImplementation"/>
         </methods>
       </class> <!-- testCases.Queue -->
+      <class name="testCases.Stack">
+        <methods>
+          <include name="stackOperations"/>
+          <include name="stack_page"/>
+          <include name="teardownDriver"/>
+          <include name="open_website"/>
+          <include name="open_stac_page"/>
+        </methods>
+      </class> <!-- testCases.Stack -->
     </classes>
-  </test> <!-- Test_All_Modules_firefox(failed) -->
+  </test> <!-- Test_All_Modules_edge(failed) -->
 </suite> <!-- Failed suite [Suite_dsAlgo] -->

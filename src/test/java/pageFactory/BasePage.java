@@ -10,9 +10,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import driverFactory.DriverFactory_TestNG;
 import utils.ConfigReader;
 
-public class CommonMethods {
+public class BasePage {
 	
 	private WebDriver tldriver;
 	String browser;
@@ -41,10 +42,11 @@ public class CommonMethods {
 	WebElement signOut;
 	
 	
-	public CommonMethods(WebDriver tldriver) throws IOException {
+	public BasePage() throws IOException {
 
 		this.config = new ConfigReader();
-		this.tldriver = tldriver;
+		this.tldriver = DriverFactory_TestNG.getDriver();
+		//this.tldriver = driver;
 		PageFactory.initElements(tldriver, this);
 		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
 

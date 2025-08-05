@@ -5,60 +5,58 @@ import static org.testng.Assert.assertEquals;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import driverFactory.DriverFactory_TestNG;
-import pageFactory.CommonMethods;
+import pageFactory.BasePage;
 import pageFactory.Queue_pf;
 
+public class Queue extends BaseTest {
 
-public class Queue {
 	Queue_pf queue;
-	CommonMethods common;
-	WebDriver tldriver;
-	DriverFactory_TestNG df;
-	
-	
-	
-    @Parameters({"browser"})	
-	@BeforeClass
-	public void open_stack_page(String br) throws IOException {
-    	this.df = new DriverFactory_TestNG();
-		this.tldriver = df.init_browser(br);
-		this.queue = new Queue_pf(tldriver);
-		this.common = new CommonMethods(tldriver);
-		common.launch_webpage();
-		common.waitUntilPageLoads("/home");
+	BasePage base;
+
+	@BeforeMethod
+	public void queue_page() throws IOException {
+		base = new BasePage();
+		queue = new Queue_pf();
+
+	}
+
+	@Test(priority = 1)
+	public void open_queue_page() {
+
+		//base.waitUntilPageLoads("/home");
 		queue.queue_btn();
-		
-		
+
 	}
-	@Test(priority=1)
+
+	@Test(priority = 2)
 	public void queueImplementation() {
-		common.waitUntilPageLoads("/queue/");
+		//base.waitUntilPageLoads("/home");
+		queue.queue_btn();
+		//base.waitUntilPageLoads("/queue/");
 		queue.implementation_queue_python_btn();
-		common.waitUntilPageLoads("/implementation-lists/");
+		//base.waitUntilPageLoads("/implementation-lists/");
 		String currentUrl = queue.get_current_url();
-		assertEquals("https://dsportalapp.herokuapp.com/queue/implementation-lists/", currentUrl ,"not in implementation of queue in python page");
+		assertEquals("https://dsportalapp.herokuapp.com/queue/implementation-lists/", currentUrl,
+				"not in implementation of queue in python page");
 	}
-	
-	@Test(priority=2, dependsOnMethods = { "queueImplementation" })
+
+	// @Test(priority=2, dependsOnMethods = { "queueImplementation" })
+	@Test(priority = 3)
 	public void queueImplementationCodeEditor() {
-		common.waitUntilPageLoads("/implementation-lists/");
+		//base.waitUntilPageLoads("/home");
+		queue.queue_btn();
+		//base.waitUntilPageLoads("/queue/");
+		queue.implementation_queue_python_btn();
+		//base.waitUntilPageLoads("/implementation-lists/");
 		queue.tryhere_queue();
-		common.waitUntilPageLoads("/tryEditor");
+		//base.waitUntilPageLoads("/tryEditor");
 		String currentUrl = queue.get_current_url();
-		assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl ,"not in try here page of implemetation of queue in python page");
-		
-	}
-	
-	@AfterClass
-	public void teardownDriver() {
-		df.tear_driver();
-		
+		assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl,
+				"not in try here page of implemetation of queue in python page");
+
 	}
 
 }

@@ -6,8 +6,8 @@
       <class name="testCases.Stack">
         <methods>
           <include name="stackOperations"/>
-          <include name="open_stack_page"/>
-          <include name="teardownDriver"/>
+          <include name="stack_page"/>
+          <include name="open_website"/>
         </methods>
       </class> <!-- testCases.Stack -->
     </classes>
