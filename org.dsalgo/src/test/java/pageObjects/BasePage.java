@@ -24,14 +24,13 @@ public class BasePage {
 	WebDriverWait wait;
 	Alert alert;
 	
-	
 	//constructor
 	public BasePage() {
 		this.driver = DriverFactory.getdriver();//initialize the driver
 		PageFactory.initElements(driver, this); //page factory initiate element
 		this.action = new Actions(driver);
 		this.wait= new WebDriverWait(driver,Duration.ofSeconds(10));
-				}
+	}
 
 	@FindBy(xpath = "//button[text()='Get Started']") WebElement getStarted;
 	@FindBy(xpath ="//a[@href='/login' and text()='Sign in']") WebElement signIn;
