@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-06T12:15:37 MDT" name="Default suite" finished-at="2025-08-06T12:15:45 MDT" duration-ms="8249">
+    <groups>
+    </groups>
+    <test started-at="2025-08-06T12:15:37 MDT" name="Default test" finished-at="2025-08-06T12:15:45 MDT" duration-ms="8249">
+      <class name="testMethodsPackage.LinkedListTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testMethodsPackage.LinkedListTest@b1712f3]" started-at="2025-08-06T12:15:37 MDT" name="setup" finished-at="2025-08-06T12:15:43 MDT" duration-ms="5779" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:testMethodsPackage.LinkedListTest@b1712f3]" started-at="2025-08-06T12:15:43 MDT" name="initPageObjects" finished-at="2025-08-06T12:15:43 MDT" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjects -->
+        <test-method signature="verifytryEditorforInvalidCode_Intro()[pri:5, instance:testMethodsPackage.LinkedListTest@b1712f3]" started-at="2025-08-06T12:15:43 MDT" name="verifytryEditorforInvalidCode_Intro" finished-at="2025-08-06T12:15:45 MDT" duration-ms="1802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytryEditorforInvalidCode_Intro -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.LinkedListTest@b1712f3]" started-at="2025-08-06T12:15:45 MDT" name="tearDown" finished-at="2025-08-06T12:15:45 MDT" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testMethodsPackage.LinkedListTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

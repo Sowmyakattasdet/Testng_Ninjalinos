@@ -30,6 +30,7 @@ public class GraphTest extends BaseTest{
 		// graphPg = new GraphPage();
 		 graphPg.getTograph();
 		 graphPg.click_Graph_link();
+		 
 	 }
 	 
 	 

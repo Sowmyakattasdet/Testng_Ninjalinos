@@ -21,7 +21,7 @@ public class BasePage {
 	private WebDriver driver;
 	private Actions action;
 	ConfigReaderTest config;
-	WebDriverWait wait;
+	private WebDriverWait wait;
 	Alert alert;
 	
 	
