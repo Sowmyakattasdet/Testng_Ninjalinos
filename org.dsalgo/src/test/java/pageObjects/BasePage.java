@@ -109,8 +109,8 @@ public class BasePage {
 		return text;
 	}
 	
-	public void validCode() {
-		action.moveToElement(textEditor).sendKeys(textEditor, "print(\"hello\")");
+	public void validCode(String testData) {
+		action.moveToElement(textEditor).sendKeys(textEditor, testData);
 		action.moveToElement(runBtn).click().perform();
 	}
 	public void invalidCode() {

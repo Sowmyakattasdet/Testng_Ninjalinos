@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import driverFactory.DriverFactory;
 import pageObjects.BasePage;
 import pageObjects.GraphPage;
+import utils.ExcelReaderTestNg;
 
 //why extend base class, dont need to init driverand quit driver. If I dont extend I have initial the driver in all class
 public class GraphTest extends BaseTest{
@@ -57,12 +58,12 @@ public class GraphTest extends BaseTest{
 	 }
 	 
 	 
-	 @Test(priority=5)
-	 public void validCode() throws InterruptedException, IOException {
+	 @Test(priority=5 ,dataProvider="dataPro", dataProviderClass=ExcelReaderTestNg.class)
+	 public void validCode(String valdCode) throws InterruptedException, IOException {
 		 graphPg.getTograph();
 		 graphPg.click_Graph_link();
 		 basePg.clickTryHere();
-		 basePg.validCode();
+		 basePg.validCode(valdCode);
 		 String checkOuputMsg = basePg.checkOuputMsg();
 		 System.out.println("The Ouput is " + checkOuputMsg);
 	 }
