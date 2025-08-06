@@ -68,7 +68,8 @@ public class Stack extends BaseTest {
 		stack.opreations_stack_btn();
 		stack.tryhere_stack();
 		base.clickRunBtn();
-		Assert.assertEquals("Code editor is empty", base.alert_message());
+		//Assert.assertEquals("Code editor is empty", base.alert_message());
+		Assert.fail("Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it");
 		
 	}
 

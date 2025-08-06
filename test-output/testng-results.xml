@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="21" passed="18" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-06T01:48:05 GMT-04:00" name="Suite_dsAlgo" finished-at="2025-08-06T01:50:03 GMT-04:00" duration-ms="117959">
+  <suite started-at="2025-08-06T02:02:24 GMT-04:00" name="Suite_dsAlgo" finished-at="2025-08-06T02:04:10 GMT-04:00" duration-ms="105851">
     <groups>
     </groups>
-    <test started-at="2025-08-06T01:48:05 GMT-04:00" name="Test_All_Modules_edge" finished-at="2025-08-06T01:49:42 GMT-04:00" duration-ms="97226">
+    <test started-at="2025-08-06T02:02:24 GMT-04:00" name="Test_All_Modules_edge" finished-at="2025-08-06T02:03:55 GMT-04:00" duration-ms="91273">
       <class name="testCases.Stack">
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T01:48:05 GMT-04:00" name="open_website" finished-at="2025-08-06T01:48:15 GMT-04:00" duration-ms="9881" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T02:02:24 GMT-04:00" name="open_website" finished-at="2025-08-06T02:02:37 GMT-04:00" duration-ms="12849" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T01:48:15 GMT-04:00" name="stack_page" finished-at="2025-08-06T01:48:15 GMT-04:00" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T02:02:37 GMT-04:00" name="stack_page" finished-at="2025-08-06T02:02:37 GMT-04:00" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stack_page -->
-        <test-method signature="open_stac_page()[pri:1, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T01:48:15 GMT-04:00" name="open_stac_page" finished-at="2025-08-06T01:48:16 GMT-04:00" duration-ms="755" status="PASS">
+        <test-method signature="open_stac_page()[pri:1, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T02:02:37 GMT-04:00" name="open_stac_page" finished-at="2025-08-06T02:02:37 GMT-04:00" duration-ms="686" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_stac_page -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T01:48:16 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:48:18 GMT-04:00" duration-ms="2576" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T02:02:38 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:02:42 GMT-04:00" duration-ms="4247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T01:48:27 GMT-04:00" name="open_website" finished-at="2025-08-06T01:48:34 GMT-04:00" duration-ms="6771" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T02:02:57 GMT-04:00" name="open_website" finished-at="2025-08-06T02:03:02 GMT-04:00" duration-ms="5416" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,19 +41,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T01:48:34 GMT-04:00" name="stack_page" finished-at="2025-08-06T01:48:34 GMT-04:00" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T02:03:02 GMT-04:00" name="stack_page" finished-at="2025-08-06T02:03:02 GMT-04:00" duration-ms="71" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stack_page -->
-        <test-method signature="stackOperations()[pri:2, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T01:48:34 GMT-04:00" name="stackOperations" finished-at="2025-08-06T01:48:35 GMT-04:00" duration-ms="1289" status="PASS">
+        <test-method signature="stackOperations()[pri:2, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T02:03:02 GMT-04:00" name="stackOperations" finished-at="2025-08-06T02:03:03 GMT-04:00" duration-ms="1310" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stackOperations -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T01:48:35 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:48:38 GMT-04:00" duration-ms="3210" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T02:03:03 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:03:07 GMT-04:00" duration-ms="3681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T01:48:47 GMT-04:00" name="open_website" finished-at="2025-08-06T01:48:56 GMT-04:00" duration-ms="8837" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T02:03:15 GMT-04:00" name="open_website" finished-at="2025-08-06T02:03:20 GMT-04:00" duration-ms="4884" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,19 +64,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T01:48:56 GMT-04:00" name="stack_page" finished-at="2025-08-06T01:48:56 GMT-04:00" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T02:03:20 GMT-04:00" name="stack_page" finished-at="2025-08-06T02:03:20 GMT-04:00" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stack_page -->
-        <test-method signature="StackoperationsCodeEditor()[pri:3, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T01:48:56 GMT-04:00" name="StackoperationsCodeEditor" finished-at="2025-08-06T01:48:58 GMT-04:00" duration-ms="2061" status="PASS">
+        <test-method signature="StackoperationsCodeEditor()[pri:3, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T02:03:20 GMT-04:00" name="StackoperationsCodeEditor" finished-at="2025-08-06T02:03:22 GMT-04:00" duration-ms="2214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StackoperationsCodeEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T01:48:58 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:49:01 GMT-04:00" duration-ms="3317" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T02:03:22 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:03:28 GMT-04:00" duration-ms="6455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T01:49:15 GMT-04:00" name="open_website" finished-at="2025-08-06T01:49:24 GMT-04:00" duration-ms="9119" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T02:03:44 GMT-04:00" name="open_website" finished-at="2025-08-06T02:03:48 GMT-04:00" duration-ms="4677" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,31 +87,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T01:49:24 GMT-04:00" name="stack_page" finished-at="2025-08-06T01:49:24 GMT-04:00" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T02:03:48 GMT-04:00" name="stack_page" finished-at="2025-08-06T02:03:48 GMT-04:00" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stack_page -->
-        <test-method signature="StackoperationsTryingEmptyEditor()[pri:4, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T01:49:24 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-06T01:49:40 GMT-04:00" duration-ms="15951" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="StackoperationsTryingEmptyEditor()[pri:4, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T02:03:48 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-06T02:03:51 GMT-04:00" duration-ms="2486" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.121, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54541}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54541/devtoo..., se:cdpVersion: 138.0.3351.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: de2819d5d37acc1bb08c4e805b1349c1]]>
+              <![CDATA[Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.121, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54541}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54541/devtoo..., se:cdpVersion: 138.0.3351.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: de2819d5d37acc1bb08c4e805b1349c1
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pageFactory.BasePage.alert_message(BasePage.java:83)
-at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:71)
+              <![CDATA[java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+at org.testng.Assert.fail(Assert.java:110)
+at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:72)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -134,17 +122,17 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StackoperationsTryingEmptyEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T01:49:41 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:49:42 GMT-04:00" duration-ms="1161" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@3c5a54b7]" started-at="2025-08-06T02:03:51 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:03:55 GMT-04:00" duration-ms="3788" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
       </class> <!-- testCases.Stack -->
       <class name="testCases.Queue">
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T01:48:18 GMT-04:00" name="open_website" finished-at="2025-08-06T01:48:25 GMT-04:00" duration-ms="7103" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T02:02:42 GMT-04:00" name="open_website" finished-at="2025-08-06T02:02:51 GMT-04:00" duration-ms="9287" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -155,19 +143,19 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T01:48:25 GMT-04:00" name="queue_page" finished-at="2025-08-06T01:48:25 GMT-04:00" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T02:02:51 GMT-04:00" name="queue_page" finished-at="2025-08-06T02:02:51 GMT-04:00" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queue_page -->
-        <test-method signature="open_queue_page()[pri:1, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T01:48:25 GMT-04:00" name="open_queue_page" finished-at="2025-08-06T01:48:26 GMT-04:00" duration-ms="770" status="PASS">
+        <test-method signature="open_queue_page()[pri:1, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T02:02:51 GMT-04:00" name="open_queue_page" finished-at="2025-08-06T02:02:52 GMT-04:00" duration-ms="519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_queue_page -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T01:48:26 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:48:27 GMT-04:00" duration-ms="453" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T02:02:52 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:02:57 GMT-04:00" duration-ms="5086" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T01:48:38 GMT-04:00" name="open_website" finished-at="2025-08-06T01:48:44 GMT-04:00" duration-ms="5646" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T02:03:07 GMT-04:00" name="open_website" finished-at="2025-08-06T02:03:12 GMT-04:00" duration-ms="4692" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -178,19 +166,19 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T01:48:44 GMT-04:00" name="queue_page" finished-at="2025-08-06T01:48:44 GMT-04:00" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T02:03:12 GMT-04:00" name="queue_page" finished-at="2025-08-06T02:03:12 GMT-04:00" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queue_page -->
-        <test-method signature="queueImplementation()[pri:2, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T01:48:44 GMT-04:00" name="queueImplementation" finished-at="2025-08-06T01:48:46 GMT-04:00" duration-ms="2136" status="PASS">
+        <test-method signature="queueImplementation()[pri:2, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T02:03:12 GMT-04:00" name="queueImplementation" finished-at="2025-08-06T02:03:14 GMT-04:00" duration-ms="1864" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queueImplementation -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T01:48:46 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:48:47 GMT-04:00" duration-ms="1021" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T02:03:14 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:03:15 GMT-04:00" duration-ms="1097" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T01:49:01 GMT-04:00" name="open_website" finished-at="2025-08-06T01:49:11 GMT-04:00" duration-ms="9722" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T02:03:28 GMT-04:00" name="open_website" finished-at="2025-08-06T02:03:33 GMT-04:00" duration-ms="4503" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -201,23 +189,23 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T01:49:11 GMT-04:00" name="queue_page" finished-at="2025-08-06T01:49:11 GMT-04:00" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T02:03:33 GMT-04:00" name="queue_page" finished-at="2025-08-06T02:03:33 GMT-04:00" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queue_page -->
-        <test-method signature="queueImplementationCodeEditor()[pri:3, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T01:49:11 GMT-04:00" name="queueImplementationCodeEditor" finished-at="2025-08-06T01:49:14 GMT-04:00" duration-ms="3345" status="PASS">
+        <test-method signature="queueImplementationCodeEditor()[pri:3, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T02:03:33 GMT-04:00" name="queueImplementationCodeEditor" finished-at="2025-08-06T02:03:35 GMT-04:00" duration-ms="1823" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queueImplementationCodeEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T01:49:14 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:49:15 GMT-04:00" duration-ms="1014" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@61f2c3f0]" started-at="2025-08-06T02:03:35 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:03:44 GMT-04:00" duration-ms="8981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
       </class> <!-- testCases.Queue -->
     </test> <!-- Test_All_Modules_edge -->
-    <test started-at="2025-08-06T01:48:05 GMT-04:00" name="Test_All_Modules_chrome" finished-at="2025-08-06T01:49:42 GMT-04:00" duration-ms="97248">
+    <test started-at="2025-08-06T02:02:24 GMT-04:00" name="Test_All_Modules_chrome" finished-at="2025-08-06T02:04:02 GMT-04:00" duration-ms="97923">
       <class name="testCases.Stack">
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T01:48:05 GMT-04:00" name="open_website" finished-at="2025-08-06T01:48:15 GMT-04:00" duration-ms="10162" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T02:02:24 GMT-04:00" name="open_website" finished-at="2025-08-06T02:02:35 GMT-04:00" duration-ms="11411" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -228,19 +216,19 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T01:48:15 GMT-04:00" name="stack_page" finished-at="2025-08-06T01:48:15 GMT-04:00" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T02:02:36 GMT-04:00" name="stack_page" finished-at="2025-08-06T02:02:36 GMT-04:00" duration-ms="51" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stack_page -->
-        <test-method signature="open_stac_page()[pri:1, instance:testCases.Stack@3088660d]" started-at="2025-08-06T01:48:15 GMT-04:00" name="open_stac_page" finished-at="2025-08-06T01:48:16 GMT-04:00" duration-ms="879" status="PASS">
+        <test-method signature="open_stac_page()[pri:1, instance:testCases.Stack@3088660d]" started-at="2025-08-06T02:02:36 GMT-04:00" name="open_stac_page" finished-at="2025-08-06T02:02:37 GMT-04:00" duration-ms="786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_stac_page -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T01:48:16 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:48:19 GMT-04:00" duration-ms="2793" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T02:02:37 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:02:42 GMT-04:00" duration-ms="5239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T01:48:27 GMT-04:00" name="open_website" finished-at="2025-08-06T01:48:36 GMT-04:00" duration-ms="9359" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T02:02:53 GMT-04:00" name="open_website" finished-at="2025-08-06T02:02:57 GMT-04:00" duration-ms="4175" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -251,19 +239,19 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T01:48:36 GMT-04:00" name="stack_page" finished-at="2025-08-06T01:48:36 GMT-04:00" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T02:02:57 GMT-04:00" name="stack_page" finished-at="2025-08-06T02:02:57 GMT-04:00" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stack_page -->
-        <test-method signature="stackOperations()[pri:2, instance:testCases.Stack@3088660d]" started-at="2025-08-06T01:48:36 GMT-04:00" name="stackOperations" finished-at="2025-08-06T01:48:37 GMT-04:00" duration-ms="946" status="PASS">
+        <test-method signature="stackOperations()[pri:2, instance:testCases.Stack@3088660d]" started-at="2025-08-06T02:02:57 GMT-04:00" name="stackOperations" finished-at="2025-08-06T02:03:01 GMT-04:00" duration-ms="4007" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stackOperations -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T01:48:37 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:48:38 GMT-04:00" duration-ms="1110" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T02:03:01 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:03:10 GMT-04:00" duration-ms="9391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T01:48:47 GMT-04:00" name="open_website" finished-at="2025-08-06T01:48:54 GMT-04:00" duration-ms="6772" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T02:03:26 GMT-04:00" name="open_website" finished-at="2025-08-06T02:03:30 GMT-04:00" duration-ms="4552" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -274,19 +262,19 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T01:48:54 GMT-04:00" name="stack_page" finished-at="2025-08-06T01:48:54 GMT-04:00" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T02:03:30 GMT-04:00" name="stack_page" finished-at="2025-08-06T02:03:30 GMT-04:00" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stack_page -->
-        <test-method signature="StackoperationsCodeEditor()[pri:3, instance:testCases.Stack@3088660d]" started-at="2025-08-06T01:48:54 GMT-04:00" name="StackoperationsCodeEditor" finished-at="2025-08-06T01:48:56 GMT-04:00" duration-ms="2156" status="PASS">
+        <test-method signature="StackoperationsCodeEditor()[pri:3, instance:testCases.Stack@3088660d]" started-at="2025-08-06T02:03:30 GMT-04:00" name="StackoperationsCodeEditor" finished-at="2025-08-06T02:03:33 GMT-04:00" duration-ms="2417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StackoperationsCodeEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T01:48:56 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:49:01 GMT-04:00" duration-ms="4934" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T02:03:33 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:03:39 GMT-04:00" duration-ms="5695" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T01:49:15 GMT-04:00" name="open_website" finished-at="2025-08-06T01:49:23 GMT-04:00" duration-ms="8081" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T02:03:55 GMT-04:00" name="open_website" finished-at="2025-08-06T02:03:59 GMT-04:00" duration-ms="3439" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -297,31 +285,19 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T01:49:23 GMT-04:00" name="stack_page" finished-at="2025-08-06T01:49:23 GMT-04:00" duration-ms="64" status="PASS">
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T02:03:59 GMT-04:00" name="stack_page" finished-at="2025-08-06T02:03:59 GMT-04:00" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stack_page -->
-        <test-method signature="StackoperationsTryingEmptyEditor()[pri:4, instance:testCases.Stack@3088660d]" started-at="2025-08-06T01:49:23 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-06T01:49:39 GMT-04:00" duration-ms="15941" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="StackoperationsTryingEmptyEditor()[pri:4, instance:testCases.Stack@3088660d]" started-at="2025-08-06T02:03:59 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-06T02:04:01 GMT-04:00" duration-ms="2545" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54540}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54540/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 81050e2add18ee806a156f53eefb7f0e]]>
+              <![CDATA[Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54540}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54540/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 81050e2add18ee806a156f53eefb7f0e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pageFactory.BasePage.alert_message(BasePage.java:83)
-at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:71)
+              <![CDATA[java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+at org.testng.Assert.fail(Assert.java:110)
+at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:72)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -344,17 +320,17 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StackoperationsTryingEmptyEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T01:49:40 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:49:42 GMT-04:00" duration-ms="1916" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@3088660d]" started-at="2025-08-06T02:04:01 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:04:02 GMT-04:00" duration-ms="332" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
       </class> <!-- testCases.Stack -->
       <class name="testCases.Queue">
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T01:48:19 GMT-04:00" name="open_website" finished-at="2025-08-06T01:48:25 GMT-04:00" duration-ms="6679" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T02:02:42 GMT-04:00" name="open_website" finished-at="2025-08-06T02:02:49 GMT-04:00" duration-ms="7310" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -365,19 +341,19 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T01:48:25 GMT-04:00" name="queue_page" finished-at="2025-08-06T01:48:25 GMT-04:00" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T02:02:49 GMT-04:00" name="queue_page" finished-at="2025-08-06T02:02:49 GMT-04:00" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queue_page -->
-        <test-method signature="open_queue_page()[pri:1, instance:testCases.Queue@412c995d]" started-at="2025-08-06T01:48:25 GMT-04:00" name="open_queue_page" finished-at="2025-08-06T01:48:26 GMT-04:00" duration-ms="661" status="PASS">
+        <test-method signature="open_queue_page()[pri:1, instance:testCases.Queue@412c995d]" started-at="2025-08-06T02:02:49 GMT-04:00" name="open_queue_page" finished-at="2025-08-06T02:02:50 GMT-04:00" duration-ms="684" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_queue_page -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T01:48:26 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:48:27 GMT-04:00" duration-ms="731" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T02:02:50 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:02:53 GMT-04:00" duration-ms="2913" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T01:48:38 GMT-04:00" name="open_website" finished-at="2025-08-06T01:48:44 GMT-04:00" duration-ms="5880" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T02:03:10 GMT-04:00" name="open_website" finished-at="2025-08-06T02:03:15 GMT-04:00" duration-ms="4144" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -388,19 +364,19 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T01:48:44 GMT-04:00" name="queue_page" finished-at="2025-08-06T01:48:44 GMT-04:00" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T02:03:15 GMT-04:00" name="queue_page" finished-at="2025-08-06T02:03:15 GMT-04:00" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queue_page -->
-        <test-method signature="queueImplementation()[pri:2, instance:testCases.Queue@412c995d]" started-at="2025-08-06T01:48:44 GMT-04:00" name="queueImplementation" finished-at="2025-08-06T01:48:46 GMT-04:00" duration-ms="2148" status="PASS">
+        <test-method signature="queueImplementation()[pri:2, instance:testCases.Queue@412c995d]" started-at="2025-08-06T02:03:15 GMT-04:00" name="queueImplementation" finished-at="2025-08-06T02:03:16 GMT-04:00" duration-ms="1151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queueImplementation -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T01:48:46 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:48:47 GMT-04:00" duration-ms="738" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T02:03:16 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:03:26 GMT-04:00" duration-ms="10212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T01:49:01 GMT-04:00" name="open_website" finished-at="2025-08-06T01:49:10 GMT-04:00" duration-ms="8755" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T02:03:39 GMT-04:00" name="open_website" finished-at="2025-08-06T02:03:43 GMT-04:00" duration-ms="4867" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -411,23 +387,23 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T01:49:10 GMT-04:00" name="queue_page" finished-at="2025-08-06T01:49:10 GMT-04:00" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T02:03:43 GMT-04:00" name="queue_page" finished-at="2025-08-06T02:03:43 GMT-04:00" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queue_page -->
-        <test-method signature="queueImplementationCodeEditor()[pri:3, instance:testCases.Queue@412c995d]" started-at="2025-08-06T01:49:10 GMT-04:00" name="queueImplementationCodeEditor" finished-at="2025-08-06T01:49:13 GMT-04:00" duration-ms="3530" status="PASS">
+        <test-method signature="queueImplementationCodeEditor()[pri:3, instance:testCases.Queue@412c995d]" started-at="2025-08-06T02:03:43 GMT-04:00" name="queueImplementationCodeEditor" finished-at="2025-08-06T02:03:46 GMT-04:00" duration-ms="2822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queueImplementationCodeEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T01:49:13 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:49:15 GMT-04:00" duration-ms="2020" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@412c995d]" started-at="2025-08-06T02:03:46 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:03:55 GMT-04:00" duration-ms="8936" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
       </class> <!-- testCases.Queue -->
     </test> <!-- Test_All_Modules_chrome -->
-    <test started-at="2025-08-06T01:48:05 GMT-04:00" name="Test_All_Modules_firefox" finished-at="2025-08-06T01:50:03 GMT-04:00" duration-ms="117957">
+    <test started-at="2025-08-06T02:02:24 GMT-04:00" name="Test_All_Modules_firefox" finished-at="2025-08-06T02:04:10 GMT-04:00" duration-ms="105849">
       <class name="testCases.Stack">
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T01:48:05 GMT-04:00" name="open_website" finished-at="2025-08-06T01:48:18 GMT-04:00" duration-ms="13218" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T02:02:24 GMT-04:00" name="open_website" finished-at="2025-08-06T02:02:40 GMT-04:00" duration-ms="15845" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -438,19 +414,19 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T01:48:18 GMT-04:00" name="stack_page" finished-at="2025-08-06T01:48:18 GMT-04:00" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T02:02:40 GMT-04:00" name="stack_page" finished-at="2025-08-06T02:02:40 GMT-04:00" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stack_page -->
-        <test-method signature="open_stac_page()[pri:1, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T01:48:18 GMT-04:00" name="open_stac_page" finished-at="2025-08-06T01:48:18 GMT-04:00" duration-ms="333" status="PASS">
+        <test-method signature="open_stac_page()[pri:1, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T02:02:40 GMT-04:00" name="open_stac_page" finished-at="2025-08-06T02:02:40 GMT-04:00" duration-ms="435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_stac_page -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T01:48:18 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:48:25 GMT-04:00" duration-ms="6868" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T02:02:40 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:02:42 GMT-04:00" duration-ms="1556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T01:48:46 GMT-04:00" name="open_website" finished-at="2025-08-06T01:49:00 GMT-04:00" duration-ms="13939" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T02:02:57 GMT-04:00" name="open_website" finished-at="2025-08-06T02:03:07 GMT-04:00" duration-ms="9996" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -461,19 +437,19 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T01:49:00 GMT-04:00" name="stack_page" finished-at="2025-08-06T01:49:00 GMT-04:00" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T02:03:07 GMT-04:00" name="stack_page" finished-at="2025-08-06T02:03:07 GMT-04:00" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stack_page -->
-        <test-method signature="stackOperations()[pri:2, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T01:49:00 GMT-04:00" name="stackOperations" finished-at="2025-08-06T01:49:01 GMT-04:00" duration-ms="683" status="PASS">
+        <test-method signature="stackOperations()[pri:2, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T02:03:07 GMT-04:00" name="stackOperations" finished-at="2025-08-06T02:03:07 GMT-04:00" duration-ms="665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stackOperations -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T01:49:01 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:49:06 GMT-04:00" duration-ms="5478" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T02:03:07 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:03:15 GMT-04:00" duration-ms="7703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T01:49:21 GMT-04:00" name="open_website" finished-at="2025-08-06T01:49:30 GMT-04:00" duration-ms="8764" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T02:03:33 GMT-04:00" name="open_website" finished-at="2025-08-06T02:03:41 GMT-04:00" duration-ms="8378" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -484,19 +460,19 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T01:49:30 GMT-04:00" name="stack_page" finished-at="2025-08-06T01:49:30 GMT-04:00" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T02:03:41 GMT-04:00" name="stack_page" finished-at="2025-08-06T02:03:41 GMT-04:00" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stack_page -->
-        <test-method signature="StackoperationsCodeEditor()[pri:3, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T01:49:30 GMT-04:00" name="StackoperationsCodeEditor" finished-at="2025-08-06T01:49:32 GMT-04:00" duration-ms="1646" status="PASS">
+        <test-method signature="StackoperationsCodeEditor()[pri:3, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T02:03:41 GMT-04:00" name="StackoperationsCodeEditor" finished-at="2025-08-06T02:03:43 GMT-04:00" duration-ms="1655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StackoperationsCodeEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T01:49:32 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:49:33 GMT-04:00" duration-ms="1810" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T02:03:43 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:03:48 GMT-04:00" duration-ms="4657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T01:49:44 GMT-04:00" name="open_website" finished-at="2025-08-06T01:49:50 GMT-04:00" duration-ms="6047" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T02:04:00 GMT-04:00" name="open_website" finished-at="2025-08-06T02:04:07 GMT-04:00" duration-ms="6729" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -507,31 +483,19 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T01:49:50 GMT-04:00" name="stack_page" finished-at="2025-08-06T01:49:50 GMT-04:00" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T02:04:07 GMT-04:00" name="stack_page" finished-at="2025-08-06T02:04:07 GMT-04:00" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stack_page -->
-        <test-method signature="StackoperationsTryingEmptyEditor()[pri:4, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T01:49:50 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-06T01:50:01 GMT-04:00" duration-ms="11821" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="StackoperationsTryingEmptyEditor()[pri:4, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T02:04:07 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-06T02:04:09 GMT-04:00" duration-ms="1653" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.2, moz:accessibilityChecks: false, moz:buildID: 20250804082849, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 38592, moz:profile: C:\Users\HP\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: d704e7cc-a390-4feb-9c85-c08114b5c3dc]]>
+              <![CDATA[Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.2, moz:accessibilityChecks: false, moz:buildID: 20250804082849, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 38592, moz:profile: C:\Users\HP\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: d704e7cc-a390-4feb-9c85-c08114b5c3dc
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pageFactory.BasePage.alert_message(BasePage.java:83)
-at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:71)
+              <![CDATA[java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+at org.testng.Assert.fail(Assert.java:110)
+at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:72)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -554,17 +518,17 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StackoperationsTryingEmptyEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T01:50:02 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:50:03 GMT-04:00" duration-ms="1013" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@2f6bcf87]" started-at="2025-08-06T02:04:09 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:04:10 GMT-04:00" duration-ms="1033" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
       </class> <!-- testCases.Stack -->
       <class name="testCases.Queue">
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T01:48:25 GMT-04:00" name="open_website" finished-at="2025-08-06T01:48:37 GMT-04:00" duration-ms="11931" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T02:02:42 GMT-04:00" name="open_website" finished-at="2025-08-06T02:02:53 GMT-04:00" duration-ms="11278" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -575,19 +539,19 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T01:48:37 GMT-04:00" name="queue_page" finished-at="2025-08-06T01:48:37 GMT-04:00" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T02:02:53 GMT-04:00" name="queue_page" finished-at="2025-08-06T02:02:53 GMT-04:00" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queue_page -->
-        <test-method signature="open_queue_page()[pri:1, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T01:48:37 GMT-04:00" name="open_queue_page" finished-at="2025-08-06T01:48:38 GMT-04:00" duration-ms="456" status="PASS">
+        <test-method signature="open_queue_page()[pri:1, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T02:02:53 GMT-04:00" name="open_queue_page" finished-at="2025-08-06T02:02:53 GMT-04:00" duration-ms="334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_queue_page -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T01:48:38 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:48:46 GMT-04:00" duration-ms="8840" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T02:02:53 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:02:57 GMT-04:00" duration-ms="3274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T01:49:06 GMT-04:00" name="open_website" finished-at="2025-08-06T01:49:15 GMT-04:00" duration-ms="8841" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T02:03:15 GMT-04:00" name="open_website" finished-at="2025-08-06T02:03:25 GMT-04:00" duration-ms="9775" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -598,19 +562,19 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T01:49:15 GMT-04:00" name="queue_page" finished-at="2025-08-06T01:49:15 GMT-04:00" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T02:03:25 GMT-04:00" name="queue_page" finished-at="2025-08-06T02:03:25 GMT-04:00" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queue_page -->
-        <test-method signature="queueImplementation()[pri:2, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T01:49:15 GMT-04:00" name="queueImplementation" finished-at="2025-08-06T01:49:16 GMT-04:00" duration-ms="736" status="PASS">
+        <test-method signature="queueImplementation()[pri:2, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T02:03:25 GMT-04:00" name="queueImplementation" finished-at="2025-08-06T02:03:25 GMT-04:00" duration-ms="632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queueImplementation -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T01:49:16 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:49:21 GMT-04:00" duration-ms="5038" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T02:03:25 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:03:33 GMT-04:00" duration-ms="7559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T01:49:33 GMT-04:00" name="open_website" finished-at="2025-08-06T01:49:41 GMT-04:00" duration-ms="7552" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T02:03:48 GMT-04:00" name="open_website" finished-at="2025-08-06T02:03:56 GMT-04:00" duration-ms="8111" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -621,15 +585,15 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T01:49:41 GMT-04:00" name="queue_page" finished-at="2025-08-06T01:49:41 GMT-04:00" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T02:03:56 GMT-04:00" name="queue_page" finished-at="2025-08-06T02:03:56 GMT-04:00" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queue_page -->
-        <test-method signature="queueImplementationCodeEditor()[pri:3, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T01:49:41 GMT-04:00" name="queueImplementationCodeEditor" finished-at="2025-08-06T01:49:42 GMT-04:00" duration-ms="1314" status="PASS">
+        <test-method signature="queueImplementationCodeEditor()[pri:3, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T02:03:56 GMT-04:00" name="queueImplementationCodeEditor" finished-at="2025-08-06T02:03:58 GMT-04:00" duration-ms="2146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queueImplementationCodeEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T01:49:42 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T01:49:44 GMT-04:00" duration-ms="1371" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@58f174d9]" started-at="2025-08-06T02:03:58 GMT-04:00" name="teardownDriver" finished-at="2025-08-06T02:04:00 GMT-04:00" duration-ms="2206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Aug 06 01:48:05 EDT 2025</td>
+<td>Started on:</td><td>Wed Aug 06 02:02:24 EDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>117 seconds (117957 ms)</td>
+<tr><td>Total time:</td><td>105 seconds (105849 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,32 +77,17 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testCases.Stack.StackoperationsTryingEmptyEditor()'><b>StackoperationsTryingEmptyEditor</b><br>Test class: testCases.Stack</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.2, moz:accessibilityChecks: false, moz:buildID: 20250804082849, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 38592, moz:profile: C:\Users\HP\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: d704e7cc-a390-4feb-9c85-c08114b5c3dc
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageFactory.BasePage.alert_message(BasePage.java:83)
-	at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:71)
+<td><div><pre>java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:72)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace355917284", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace355917284'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.2, moz:accessibilityChecks: false, moz:buildID: 20250804082849, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 38592, moz:profile: C:\Users\HP\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: d704e7cc-a390-4feb-9c85-c08114b5c3dc
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageFactory.BasePage.alert_message(BasePage.java:83)
-	at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:71)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1332801620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1332801620'><pre>java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at org.testng.Assert.fail(Assert.java:110)
+	at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:72)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -124,7 +109,7 @@ Session ID: d704e7cc-a390-4feb-9c85-c08114b5c3dc
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>11</td>
+<td>1</td>
 <td>testCases.Stack@2f6bcf87</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -141,6 +126,16 @@ Session ID: d704e7cc-a390-4feb-9c85-c08114b5c3dc
 <td>0</td>
 <td>testCases.Stack@2f6bcf87</td></tr>
 <tr>
+<td title='testCases.Stack.StackoperationsCodeEditor()'><b>StackoperationsCodeEditor</b><br>Test class: testCases.Stack</td>
+<td></td>
+<td>1</td>
+<td>testCases.Stack@2f6bcf87</td></tr>
+<tr>
+<td title='testCases.Queue.queueImplementation()'><b>queueImplementation</b><br>Test class: testCases.Queue</td>
+<td></td>
+<td>0</td>
+<td>testCases.Queue@58f174d9</td></tr>
+<tr>
 <td title='testCases.Queue.open_queue_page()'><b>open_queue_page</b><br>Test class: testCases.Queue</td>
 <td></td>
 <td>0</td>
@@ -151,20 +146,10 @@ Session ID: d704e7cc-a390-4feb-9c85-c08114b5c3dc
 <td>0</td>
 <td>testCases.Stack@2f6bcf87</td></tr>
 <tr>
-<td title='testCases.Queue.queueImplementation()'><b>queueImplementation</b><br>Test class: testCases.Queue</td>
-<td></td>
-<td>0</td>
-<td>testCases.Queue@58f174d9</td></tr>
-<tr>
 <td title='testCases.Queue.queueImplementationCodeEditor()'><b>queueImplementationCodeEditor</b><br>Test class: testCases.Queue</td>
 <td></td>
-<td>1</td>
+<td>2</td>
 <td>testCases.Queue@58f174d9</td></tr>
-<tr>
-<td title='testCases.Stack.StackoperationsCodeEditor()'><b>StackoperationsCodeEditor</b><br>Test class: testCases.Stack</td>
-<td></td>
-<td>1</td>
-<td>testCases.Stack@2f6bcf87</td></tr>
 </table><p>
 </body>
 </html>
