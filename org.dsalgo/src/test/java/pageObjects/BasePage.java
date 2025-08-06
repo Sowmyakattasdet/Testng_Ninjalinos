@@ -24,7 +24,6 @@ public class BasePage {
 	WebDriverWait wait;
 	Alert alert;
 	
-	
 	//constructor
 	public BasePage() {
 		this.driver = DriverFactory.getdriver();//initialize the driver
