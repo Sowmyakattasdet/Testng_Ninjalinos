@@ -5,15 +5,16 @@ import static org.testng.Assert.assertEquals;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
-
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageFactory.BasePage;
 
 import pageFactory.Stack_pf;
 
+@Listeners(CustomListener.class)
 public class Stack extends BaseTest {
 
 	Stack_pf stack;
@@ -58,6 +59,17 @@ public class Stack extends BaseTest {
 		assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl,
 				"not in try here page of operations in stack page");
 
+	}
+	
+	
+	@Test(priority = 4)
+	public void StackoperationsTryingEmptyEditor() {
+		stack.stack_btn();
+		stack.opreations_stack_btn();
+		stack.tryhere_stack();
+		base.clickRunBtn();
+		Assert.assertEquals("Code editor is empty", base.alert_message());
+		
 	}
 
 }

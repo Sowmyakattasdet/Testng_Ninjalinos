@@ -1,1 +1,0 @@
-{"uuid":"75f2917a-220d-48f6-b134-848d097e1051","name":"testCases.Stack.stack_page","children":["3898a94f-d9f7-4f3e-833c-75e3a1cb3e3b"],"description":"","befores":[{"name":"stack_page","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1754423347084,"stop":1754423347119}],"afters":[],"start":1754423347084,"stop":1754423347119}

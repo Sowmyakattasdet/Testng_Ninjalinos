@@ -4,13 +4,14 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageFactory.BasePage;
 import pageFactory.Queue_pf;
 
+@Listeners(CustomListener.class)
 public class Queue extends BaseTest {
 
 	Queue_pf queue;

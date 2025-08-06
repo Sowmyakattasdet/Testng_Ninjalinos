@@ -3,6 +3,8 @@ package pageFactory;
 import java.io.IOException;
 import java.time.Duration;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,6 +21,7 @@ public class BasePage {
 	String browser;
 	WebDriverWait wait;
 	ConfigReader config;
+	Alert alert;
 	
 	
 	
@@ -41,6 +44,9 @@ public class BasePage {
 
 	@FindBy(xpath = "//*[text()='Sign out']")
 	WebElement signOut;
+	
+	@FindBy(xpath = "//button[contains(text(),'Run')]")
+	WebElement runBtn;
 	
 	
 	public BasePage() throws IOException {
@@ -65,8 +71,27 @@ public class BasePage {
 		logInBtn.click();
 	}
 	
-	public void waitUntilPageLoads(String partialUrl) {
-		wait.until(ExpectedConditions.urlContains(partialUrl));
+//	public void waitUntilPageLoads(String partialUrl) {
+//		wait.until(ExpectedConditions.urlContains(partialUrl));
+//	}
+	
+	public void clickRunBtn() {
+		wait.until(ExpectedConditions.elementToBeClickable(runBtn)).click();
 	}
+	
+	public String alert_message() {
+		wait.until(ExpectedConditions.alertIsPresent());
+		alert = tldriver.switchTo().alert();
+		String alertMsg = alert.getText();
+		return alertMsg;
+	}
+
+	public void handle_alert() {
+		wait.until(ExpectedConditions.alertIsPresent());
+		alert = tldriver.switchTo().alert();
+		alert.accept();
+
+	}
+
 
 }
