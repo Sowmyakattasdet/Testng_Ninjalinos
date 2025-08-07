@@ -4,6 +4,7 @@
   <listeners>
     <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
     <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    <listener class-name="Analyzer.DsalgoAnnotationTransformer"/>
   </listeners>
   <test thread-count="5" parallel="tests" name="Test_All_Modules_edge(failed)">
     <parameter name="browser" value="edge"/>
@@ -23,8 +24,8 @@
     <classes>
       <class name="testCases.Stack">
         <methods>
-          <include name="StackoperationsTryingEmptyEditor"/>
           <include name="stack_page"/>
+          <include name="StackoperationsTryingEmptyEditor"/>
           <include name="teardownDriver"/>
           <include name="open_website"/>
         </methods>
@@ -36,8 +37,8 @@
     <classes>
       <class name="testCases.Stack">
         <methods>
-          <include name="stack_page"/>
           <include name="StackoperationsTryingEmptyEditor"/>
+          <include name="stack_page"/>
           <include name="teardownDriver"/>
           <include name="open_website"/>
         </methods>

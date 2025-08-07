@@ -13,17 +13,20 @@ import org.testng.annotations.Test;
 import pageFactory.BasePage;
 
 import pageFactory.Stack_pf;
+import utils.LoggerLoad;
 
 @Listeners(CustomListener.class)
 public class Stack extends BaseTest {
 
 	Stack_pf stack;
 	BasePage base;
+	LoggerLoad log;
 
 	@BeforeMethod
 	public void stack_page() throws IOException {
-		base = new BasePage();
-		stack = new Stack_pf();
+		this.base = new BasePage();
+		this.stack = new Stack_pf();
+		this.log = new LoggerLoad();
 
 	}
 
@@ -69,6 +72,7 @@ public class Stack extends BaseTest {
 		stack.tryhere_stack();
 		base.clickRunBtn();
 		//Assert.assertEquals("Code editor is empty", base.alert_message());
+		log.error("Alert message for no code entered in editor is not displayed");
 		Assert.fail("Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it");
 		
 	}

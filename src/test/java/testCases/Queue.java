@@ -10,17 +10,20 @@ import org.testng.annotations.Test;
 
 import pageFactory.BasePage;
 import pageFactory.Queue_pf;
+import utils.LoggerLoad;
 
 @Listeners(CustomListener.class)
 public class Queue extends BaseTest {
 
 	Queue_pf queue;
 	BasePage base;
+	LoggerLoad log;
 
 	@BeforeMethod
 	public void queue_page() throws IOException {
-		base = new BasePage();
-		queue = new Queue_pf();
+		this.base = new BasePage();
+		this.queue = new Queue_pf();
+		this.log = new LoggerLoad();
 
 	}
 

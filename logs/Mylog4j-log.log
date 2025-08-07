@@ -1,301 +1,48 @@
-[INFO] 2025-08-04 00:14:08.132 [main] Utils - [TestNG] Running:
-  C:\Users\HP\eclipse-workspace\AKVJ\dsAlgo_TestNG_Ninjalinos\testng.xml
-
-[INFO] 2025-08-04 00:21:50.819 [main] Utils - [TestNG] Running:
-  C:\Users\HP\eclipse-workspace\AKVJ\dsAlgo_TestNG_Ninjalinos\testng.xml
-
-[INFO] 2025-08-04 00:25:25.526 [main] Utils - [TestNG] Running:
-  C:\Users\HP\eclipse-workspace\AKVJ\dsAlgo_TestNG_Ninjalinos\testng.xml
-
-[INFO] 2025-08-04 00:35:37.378 [main] Utils - [TestNG] Running:
-  C:\Users\HP\eclipse-workspace\AKVJ\dsAlgo_TestNG_Ninjalinos\testng.xml
-
-[INFO] 2025-08-04 00:42:34.203 [main] Utils - [TestNG] Running:
-  C:\Users\HP\eclipse-workspace\AKVJ\dsAlgo_TestNG_Ninjalinos\testng.xml
-
-[INFO] 2025-08-04 15:28:56.215 [main] Utils - [TestNG] Running:
-  C:\Users\HP\eclipse-workspace\AKVJ\dsAlgo_TestNG_Ninjalinos\testng.xml
-
-[INFO] 2025-08-04 15:52:05.010 [main] Utils - [TestNG] Running:
-  C:\Users\HP\eclipse-workspace\AKVJ\dsAlgo_TestNG_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 00:58:02.733 [main] Utils - [TestNG] Running:
+[WARN] 2025-08-07 11:00:12.806 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[WARN] 2025-08-07 11:00:12.810 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[WARN] 2025-08-07 11:00:12.810 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[INFO] 2025-08-07 11:00:13.174 [main] Utils - [TestNG] Running:
   C:\Users\HP\git\Testng_Ninjalinos\testng.xml
 
-[INFO] 2025-08-05 01:00:26.048 [main] Utils - [TestNG] Running:
+[ERROR] 2025-08-07 11:00:47.840 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:00:48.011 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:00:52.267 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:00:52.267 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:00:56.712 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:00:57.028 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:01:01.297 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:01:01.325 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:01:01.470 [TestNG-tests-2] AllureLifecycle - Could not add attachment: no test is running
+[WARN] 2025-08-07 11:02:42.954 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[WARN] 2025-08-07 11:02:42.955 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[WARN] 2025-08-07 11:02:42.955 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[INFO] 2025-08-07 11:02:43.286 [main] Utils - [TestNG] Running:
   C:\Users\HP\git\Testng_Ninjalinos\testng.xml
 
-[INFO] 2025-08-05 11:25:26.353 [main] Utils - [TestNG] Running:
+[ERROR] 2025-08-07 11:03:13.875 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:03:13.877 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:03:14.065 [TestNG-tests-2] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-07 11:03:14.124 [TestNG-tests-1] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-07 11:03:31.226 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:03:31.267 [TestNG-tests-3] AllureLifecycle - Could not add attachment: no test is running
+[WARN] 2025-08-07 11:04:23.175 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[WARN] 2025-08-07 11:04:23.178 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[WARN] 2025-08-07 11:04:23.178 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[INFO] 2025-08-07 11:04:23.487 [main] Utils - [TestNG] Running:
   C:\Users\HP\git\Testng_Ninjalinos\testng.xml
 
-[INFO] 2025-08-05 11:27:57.598 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 11:29:18.070 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 11:30:28.252 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 11:33:14.588 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 11:37:52.663 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 11:39:27.760 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 11:40:45.190 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 12:41:56.839 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 12:43:50.827 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 12:45:48.675 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:45:48.681 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
-[INFO] 2025-08-05 12:45:48.684 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:45:48.684 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:45:48.685 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:45:48.686 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:45:48.687 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:45:48.687 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:45:48.689 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:45:48.690 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:45:48.692 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:45:48.692 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:45:48.693 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:45:48.694 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:45:48.694 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:45:48.694 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:45:48.711 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 8 ms.
-[INFO] 2025-08-05 12:45:48.728 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 17 ms.
-[INFO] 2025-08-05 12:45:48.731 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:45:48.732 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:45:48.733 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:45:48.734 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:45:48.734 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:45:48.734 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:45:48.737 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
-[INFO] 2025-08-05 12:45:48.739 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:45:48.742 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:45:48.743 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:45:48.743 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:45:48.743 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:45:48.750 [main] Utils - [TestNG] Running:
-  C:\Users\HP\AppData\Local\Temp\testng-eclipse-1147962598\testng-customsuite.xml
-
-[INFO] 2025-08-05 12:45:48.777 [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 6 ms.
-[INFO] 2025-08-05 12:45:49.050 [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@2b50150: 0 ms
-[INFO] 2025-08-05 12:45:49.117 [main] Utils - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@88a8218: 66 ms
-[INFO] 2025-08-05 12:45:49.230 [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@109f5dd8: 113 ms
-[INFO] 2025-08-05 12:45:49.246 [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@19542407: 16 ms
-[INFO] 2025-08-05 12:45:49.262 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@d4602a: 16 ms
-[INFO] 2025-08-05 12:45:49.274 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@d2387c8: 11 ms
-[INFO] 2025-08-05 12:45:49.287 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@13e9f2e2: 12 ms
-[INFO] 2025-08-05 12:46:22.982 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
-[INFO] 2025-08-05 12:46:22.987 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
-[INFO] 2025-08-05 12:46:22.992 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:46:22.992 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:46:22.993 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:46:22.994 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:46:22.995 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:46:22.995 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:46:22.996 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:46:22.997 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:46:22.998 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:46:22.998 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:46:22.999 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:46:23.000 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:46:23.001 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:46:23.002 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:46:23.017 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 8 ms.
-[INFO] 2025-08-05 12:46:23.031 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 14 ms.
-[INFO] 2025-08-05 12:46:23.033 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:46:23.033 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:46:23.035 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:46:23.035 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:46:23.035 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:46:23.035 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:46:23.039 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
-[INFO] 2025-08-05 12:46:23.041 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-[INFO] 2025-08-05 12:46:23.042 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:46:23.042 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:46:23.043 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 2025-08-05 12:46:23.043 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 2025-08-05 12:46:23.051 [main] Utils - [TestNG] Running:
-  C:\Users\HP\AppData\Local\Temp\testng-eclipse-2014032895\testng-customsuite.xml
-
-[INFO] 2025-08-05 12:46:23.079 [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 3 ms.
-[INFO] 2025-08-05 12:46:23.383 [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@2b50150: 0 ms
-[INFO] 2025-08-05 12:46:23.442 [main] Utils - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@88a8218: 59 ms
-[INFO] 2025-08-05 12:46:23.610 [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@109f5dd8: 166 ms
-[INFO] 2025-08-05 12:46:23.633 [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@19542407: 22 ms
-[INFO] 2025-08-05 12:46:23.650 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@d4602a: 17 ms
-[INFO] 2025-08-05 12:46:23.675 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@d2387c8: 25 ms
-[INFO] 2025-08-05 12:46:23.690 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@13e9f2e2: 15 ms
-[INFO] 2025-08-05 12:46:42.229 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 12:48:00.364 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 12:50:36.973 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 12:53:49.752 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 12:54:49.863 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 13:00:18.135 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 14:11:44.456 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 14:21:47.898 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 14:28:24.577 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 14:30:21.834 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 15:45:55.625 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 15:47:31.134 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 15:48:48.328 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 15:49:46.370 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 15:51:41.799 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 15:53:05.522 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 15:54:25.035 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 15:55:24.055 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 15:57:23.108 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 15:58:39.511 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 16:00:20.175 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 16:02:01.521 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 16:11:50.735 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 16:12:59.167 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 16:18:08.302 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 16:23:47.341 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 16:26:00.811 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 16:27:32.289 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 16:28:39.349 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 16:32:01.236 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 16:40:08.186 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 16:46:06.326 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-05 23:47:31.312 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-06 01:08:53.489 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-06 01:17:30.090 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-06 01:26:39.047 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-06 01:34:22.016 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-06 01:48:05.065 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-06 02:02:24.323 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[INFO] 2025-08-06 23:14:51.412 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[ERROR] 2025-08-06 23:15:28.312 [TestNG-tests-2] AllureLifecycle - Could not add attachment: no test is running
-[ERROR] 2025-08-06 23:15:29.295 [TestNG-tests-1] AllureLifecycle - Could not add attachment: no test is running
-[ERROR] 2025-08-06 23:15:54.942 [TestNG-tests-3] AllureLifecycle - Could not add attachment: no test is running
-[INFO] 2025-08-06 23:24:26.180 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[ERROR] 2025-08-06 23:25:02.005 [TestNG-tests-1] AllureLifecycle - Could not add attachment: no test is running
-[ERROR] 2025-08-06 23:25:02.282 [TestNG-tests-2] AllureLifecycle - Could not add attachment: no test is running
-[ERROR] 2025-08-06 23:25:25.637 [TestNG-tests-3] AllureLifecycle - Could not add attachment: no test is running
-[WARN] 2025-08-06 23:34:56.825 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-[WARN] 2025-08-06 23:34:56.828 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-[WARN] 2025-08-06 23:34:56.828 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-[INFO] 2025-08-06 23:34:57.446 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[ERROR] 2025-08-06 23:35:33.120 [TestNG-tests-1] AllureLifecycle - Could not add attachment: no test is running
-[ERROR] 2025-08-06 23:35:33.232 [TestNG-tests-2] AllureLifecycle - Could not add attachment: no test is running
-[ERROR] 2025-08-06 23:35:58.579 [TestNG-tests-3] AllureLifecycle - Could not add attachment: no test is running
-[WARN] 2025-08-07 00:11:29.641 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-[WARN] 2025-08-07 00:11:29.644 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-[WARN] 2025-08-07 00:11:29.644 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-[INFO] 2025-08-07 00:11:30.310 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[WARN] 2025-08-07 00:18:49.582 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-[WARN] 2025-08-07 00:18:49.587 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-[WARN] 2025-08-07 00:18:49.588 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-[INFO] 2025-08-07 00:18:50.735 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[ERROR] 2025-08-07 00:19:46.905 [TestNG-tests-2] AllureLifecycle - Could not add attachment: no test is running
-[ERROR] 2025-08-07 00:19:47.164 [TestNG-tests-1] AllureLifecycle - Could not add attachment: no test is running
-[ERROR] 2025-08-07 00:20:31.979 [TestNG-tests-3] AllureLifecycle - Could not add attachment: no test is running
-[WARN] 2025-08-07 00:30:14.355 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-[WARN] 2025-08-07 00:30:14.362 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-[WARN] 2025-08-07 00:30:14.363 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-[INFO] 2025-08-07 00:30:15.526 [main] Utils - [TestNG] Running:
-  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
-
-[ERROR] 2025-08-07 00:31:14.328 [TestNG-tests-2] AllureLifecycle - Could not add attachment: no test is running
-[ERROR] 2025-08-07 00:31:14.596 [TestNG-tests-1] AllureLifecycle - Could not add attachment: no test is running
-[ERROR] 2025-08-07 00:31:56.460 [TestNG-tests-3] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-07 11:04:54.381 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:04:54.675 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:04:59.785 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:04:59.803 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:05:05.681 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:05:05.753 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:05:10.828 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:05:10.881 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:05:11.023 [TestNG-tests-2] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-07 11:05:11.053 [TestNG-tests-1] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-07 11:05:20.115 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:05:25.307 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:05:30.957 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:05:36.145 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-07 11:05:36.188 [TestNG-tests-3] AllureLifecycle - Could not add attachment: no test is running
