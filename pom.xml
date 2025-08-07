@@ -67,6 +67,9 @@
 			<artifactId>chaintest-testng</artifactId>
 			<version>1.0.12</version>
 		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/io.qameta.allure/allure-java-commons -->
+		
 
 	</dependencies>
 </project>

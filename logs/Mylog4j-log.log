@@ -254,3 +254,39 @@
 [INFO] 2025-08-06 02:02:24.323 [main] Utils - [TestNG] Running:
   C:\Users\HP\git\Testng_Ninjalinos\testng.xml
 
+[INFO] 2025-08-06 23:14:51.412 [main] Utils - [TestNG] Running:
+  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
+
+[ERROR] 2025-08-06 23:15:28.312 [TestNG-tests-2] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-06 23:15:29.295 [TestNG-tests-1] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-06 23:15:54.942 [TestNG-tests-3] AllureLifecycle - Could not add attachment: no test is running
+[INFO] 2025-08-06 23:24:26.180 [main] Utils - [TestNG] Running:
+  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
+
+[ERROR] 2025-08-06 23:25:02.005 [TestNG-tests-1] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-06 23:25:02.282 [TestNG-tests-2] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-06 23:25:25.637 [TestNG-tests-3] AllureLifecycle - Could not add attachment: no test is running
+[WARN] 2025-08-06 23:34:56.825 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[WARN] 2025-08-06 23:34:56.828 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[WARN] 2025-08-06 23:34:56.828 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[INFO] 2025-08-06 23:34:57.446 [main] Utils - [TestNG] Running:
+  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
+
+[ERROR] 2025-08-06 23:35:33.120 [TestNG-tests-1] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-06 23:35:33.232 [TestNG-tests-2] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-06 23:35:58.579 [TestNG-tests-3] AllureLifecycle - Could not add attachment: no test is running
+[WARN] 2025-08-07 00:11:29.641 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[WARN] 2025-08-07 00:11:29.644 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[WARN] 2025-08-07 00:11:29.644 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[INFO] 2025-08-07 00:11:30.310 [main] Utils - [TestNG] Running:
+  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
+
+[WARN] 2025-08-07 00:18:49.582 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[WARN] 2025-08-07 00:18:49.587 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[WARN] 2025-08-07 00:18:49.588 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[INFO] 2025-08-07 00:18:50.735 [main] Utils - [TestNG] Running:
+  C:\Users\HP\git\Testng_Ninjalinos\testng.xml
+
+[ERROR] 2025-08-07 00:19:46.905 [TestNG-tests-2] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-07 00:19:47.164 [TestNG-tests-1] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-07 00:20:31.979 [TestNG-tests-3] AllureLifecycle - Could not add attachment: no test is running

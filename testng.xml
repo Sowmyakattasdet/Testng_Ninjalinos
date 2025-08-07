@@ -4,6 +4,7 @@
 	<listeners>
 		<listener
 			class-name="com.aventstack.chaintest.plugins.ChainTestListener" />
+			<listener class-name="io.qameta.allure.testng.AllureTestNg"/>
 	</listeners>
 	<!--<listeners>
             <listener class-name="testCases.CustomListener"/>
