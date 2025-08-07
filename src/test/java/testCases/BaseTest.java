@@ -54,7 +54,7 @@ public class BaseTest {
 		File savedScreenshot = new File("target/screenshots/"+"screenshot_"+testMethodName+".jpg");
 		FileUtils.copyFile(screenshot, savedScreenshot);
 		try (InputStream is = new FileInputStream(savedScreenshot)) {
-	        Allure.addAttachment("Screenshot", "image/jpg", is, ".jpg");
+	        Allure.addAttachment("Screenshot", "image/jpg", is, "jpg");
 	    }
 		ChainTestListener.embed(savedScreenshot, "image/jpg");
 		//return screenshot_for_allureReport;
