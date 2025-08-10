@@ -38,6 +38,8 @@ public class BaseTest {
 	}
 	
 	
+	public void failed_screenshot() {}
+	
 	
 	
 	   @AfterMethod
