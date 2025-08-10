@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import driverFactory.DriverFactory;
 import utils.ConfigReaderTest;
+import utils.ExcelReaderTestNg;
 
 public class BasePage {
 	private WebDriver driver;
@@ -25,7 +26,7 @@ public class BasePage {
 	Alert alert;
 	
 	//constructor
-	public BasePage() {
+	public BasePage() throws IOException {
 		this.driver = DriverFactory.getdriver();//initialize the driver
 		PageFactory.initElements(driver, this); //page factory initiate element
 		this.action = new Actions(driver);
@@ -66,17 +67,17 @@ public class BasePage {
 		
 	}
 	
-	public void setUserName() throws InterruptedException {
+	public void setUserName(String uname) throws InterruptedException {
 		action.moveToElement(userName)
         .click()
-        .sendKeys(userName, "ninjalinos@work.com")
+        .sendKeys(userName, uname)
         .perform();
 	}
 	
-	public void setPassword() throws InterruptedException {
+	public void setPassword(String pword) throws InterruptedException {
 		 action.moveToElement(passWord)
          .click()
-         .sendKeys(passWord, "sdet218920@")
+         .sendKeys(passWord, pword)
          .perform();
 	}
 	
@@ -108,13 +109,12 @@ public class BasePage {
 		return text;
 	}
 	
-	public void validCode(String testData) {
+	public void validCode(String testData) throws InterruptedException, IOException {
 		action.moveToElement(textEditor).sendKeys(textEditor, testData);
 		action.moveToElement(runBtn).click().perform();
 	}
-	public void invalidCode() {
-		String invalid_data= "hello__world";
-		action.moveToElement(textEditor).sendKeys(textEditor, invalid_data);
+	public void invalidCode(String testData) throws InterruptedException, IOException {
+		action.moveToElement(textEditor).sendKeys(textEditor, testData);
 		action.moveToElement(runBtn).click().perform();
 		wait.until(ExpectedConditions.alertIsPresent());
 	}

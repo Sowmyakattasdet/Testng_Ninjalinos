@@ -16,32 +16,32 @@ public class GraphTest extends BaseTest{
 	BasePage basePg;
 	BaseTest baseTest;
 	DriverFactory driverfact;
+	ExcelReaderTestNg excelReader;
 	
 	@BeforeMethod
 	public void graphPage() throws InterruptedException, IOException {
 		graphPg = new GraphPage();
 		basePg = new BasePage();
-		
+		excelReader = new ExcelReaderTestNg();
 	}
 	
 	 
 	  
-	@Test(priority=1)
+	//@Test(priority=1)
 	 public void getClick_Graph() throws InterruptedException, IOException {
-		// graphPg = new GraphPage();
 		 graphPg.getTograph();
 		 graphPg.click_Graph_link();
 	 }
 	 
 	 
-	 @Test(priority=2)
+	 //@Test(priority=2)
 	 public void getClick_GraphRepre() throws InterruptedException, IOException {
 		 graphPg.getTograph();
 		 graphPg.click_GraphRepre();
 	 }
 	
 	 
-	 @Test(priority=3)
+	// @Test(priority=3)
 	 public void getTitleGraph() throws InterruptedException, IOException {	
 		 graphPg.getTograph();
 		 graphPg.click_Graph_link();
@@ -49,7 +49,7 @@ public class GraphTest extends BaseTest{
 		 System.out.println("The page naviagated to - " + currentTitle);
 	 }
 	
-	 @Test(priority=4)
+	// @Test(priority=4)
 	 public void getTitleGraphRepre() throws InterruptedException, IOException {	
 		 graphPg.getTograph();
 		 graphPg.click_GraphRepre();
@@ -57,13 +57,23 @@ public class GraphTest extends BaseTest{
 		 System.out.println("The page naviagated to - " + currentTitle);
 	 }
 	 
-	 
-	 @Test(priority=5 ,dataProvider="dataPro", dataProviderClass=ExcelReaderTestNg.class)
-	 public void validCode(String valdCode) throws InterruptedException, IOException {
+	@Test(priority=5)
+	 public void validCod() throws InterruptedException, IOException {
 		 graphPg.getTograph();
 		 graphPg.click_Graph_link();
 		 basePg.clickTryHere();
-		 basePg.validCode(valdCode);
+		 String validCode = excelReader.getcellData(1, "Valid code");
+		 basePg.validCode(validCode);
+		 String checkOuputMsg = basePg.checkOuputMsg();
+		 System.out.println("The Ouput is " + checkOuputMsg);
+	 }
+	
+	 @Test(priority=5 ,dataProvider="dataPro", dataProviderClass=ExcelReaderTestNg.class)
+	 public void validCode(String validCode) throws InterruptedException, IOException {
+		 graphPg.getTograph();
+		 graphPg.click_Graph_link();
+		 basePg.clickTryHere();
+		 basePg.validCode(validCode);
 		 String checkOuputMsg = basePg.checkOuputMsg();
 		 System.out.println("The Ouput is " + checkOuputMsg);
 	 }
@@ -73,7 +83,8 @@ public class GraphTest extends BaseTest{
 		 graphPg.getTograph();
 		 graphPg.click_Graph_link();
 		 basePg.clickTryHere();
-		 basePg.invalidCode();
+		 String invalidCode = excelReader.getcellData(1, "Invalid code");
+		 basePg.invalidCode(invalidCode);
 		 String alert_message = basePg.alert_message();
 		 System.out.println("The alert msg is : " + alert_message);
 		 basePg.handleAlert();

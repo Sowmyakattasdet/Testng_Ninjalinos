@@ -8,7 +8,6 @@ import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -17,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import driverFactory.DriverFactory;
 
-public class GraphPage {
+public class GraphPage  {
 	
 	private WebDriver driver;
 	private WebDriverWait wait;
@@ -67,13 +66,10 @@ public class GraphPage {
 	
 //Login to Graph 
 	public void getTograph() throws InterruptedException, IOException {
-		
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", graphGetStarted);
 		wait.until(ExpectedConditions.visibilityOf(graphGetStarted));
 		action.moveToElement(graphGetStarted).click().perform();
-	
 	}
-	
 	
 	public void click_Graph_link() throws InterruptedException {
 		wait.until(ExpectedConditions.visibilityOf(graph));

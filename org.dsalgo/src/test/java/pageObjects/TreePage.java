@@ -2,8 +2,10 @@ package pageObjects;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Arrays;
 import java.util.List;
 
+import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,7 +18,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import driverFactory.DriverFactory;
 
 
-public class TreePage {
+public class TreePage extends BasePage{
 	
 	private WebDriver driver;
 	private Actions action;
@@ -59,7 +61,7 @@ public class TreePage {
 	WebElement binarySearch;
 	@FindBy(xpath = "//a[contains(text(),'Implementation Of BST')]")
 	WebElement impOfBST;
-	@FindBy(tagName = "a")
+	@FindBy(xpath ="//a[@class='list-group-item']")
 	List<WebElement> treeLinks;
 	@FindBy(xpath = "//a[contains(text(),'Try here')]")
 	WebElement tryHereButton;
@@ -73,14 +75,22 @@ public class TreePage {
 	WebElement practQuestTree;
 	WebDriverWait wait;
 	
-	
-	public TreePage(WebDriver driver) throws IOException {
+		
+	public TreePage() throws IOException {
 		this.driver = DriverFactory.getdriver();
-		this.action = new Actions(driver);
 		PageFactory.initElements(driver, this);
+		this.action = new Actions(driver);
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));		
-
 	}
+	
+	public void getToTree() throws InterruptedException, IOException {
+		
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", treegetStartedButton);
+		wait.until(ExpectedConditions.elementToBeClickable(treegetStartedButton));
+		action.moveToElement(treegetStartedButton).click().perform();
+	
+	}
+	
 	
 	//action methods
 	public void practice_Tree() {
@@ -93,21 +103,31 @@ public class TreePage {
 		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 600);");
 		Thread.sleep(3000);
 	}
-
 	
-	public void click_Overview() throws InterruptedException {
 		
+	public void verifyLinks() {
+		List<String> expectedLinks = Arrays.asList(
+			"Overview of trees", "Terminologies", "Types of Tree", "Tree Traversals",
+			"Traversals-Illustration", "Binary Trees", "Types of Binary", "Implementation in Python",
+			"Binary Tree Traversals", "Applications of Binary trees", "Implementation of Binary Trees",
+			"Binary Search", "Implementation of BST"
+		);
+		System.out.println("Total matching links " + treeLinks.size());
 		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 300);");
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", overviewOfTree);
-		action.scrollToElement(overviewOfTree).perform();
-		action.click(overviewOfTree).perform();
+		for (WebElement treeLink : treeLinks) {
+			String linkText = treeLink.getText().trim();
+			if (expectedLinks.contains(linkText)) {
+				System.out.println("Link found- " + linkText);
+				System.out.println(" url of the links  " + treeLink.getAttribute("href"));
+			} 
+		}
 	}
 	
-	public String navigate_OverviewofTree() throws InterruptedException {
-		wait.until(ExpectedConditions.titleContains("Overview of Trees"));
-		String afterNavigation = driver.getCurrentUrl();
-		System.out.println("check after click" + afterNavigation);
-		return afterNavigation;
+
+	public void click_Overview() throws InterruptedException {
+		action.scrollToElement(overviewOfTree).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(overviewOfTree));
+		action.click(overviewOfTree).perform();
 	}
 	
 	public String outputText() {
@@ -117,24 +137,24 @@ public class TreePage {
 	}
 	
 	public void click_Terminilogy() {
-		wait.until(ExpectedConditions.visibilityOf(terminologies));
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", terminologies);
 		action.scrollToElement(terminologies).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(terminologies));
 		action.click(terminologies).perform();
 		wait.until(ExpectedConditions.urlContains("/tree/terminologies/"));
 	}
 	public void typesOfTrees() throws InterruptedException {
 		wait.until(ExpectedConditions.visibilityOf(typeofTrees));
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", typeofTrees);
 		action.scrollToElement(typeofTrees).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(typeofTrees));
 		action.click(typeofTrees).perform();
 		wait.until(ExpectedConditions.urlContains("/tree/types-of-trees/"));
 	}
 	
 	public void tree_Trav() {
 		wait.until(ExpectedConditions.visibilityOf(traversals));
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", traversals);
+		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", traversals);
 		action.scrollToElement(traversals).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(traversals));
 		action.click(traversals).perform();
 		wait.until(ExpectedConditions.urlContains("/tree/tree-traversals/"));
 
@@ -147,24 +167,20 @@ public class TreePage {
 
 	public void Traversal_Illustra() {
 		wait.until(ExpectedConditions.visibilityOf(traIllustration));
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", traIllustration);
+		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", traIllustration);
 		action.scrollToElement(traIllustration).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(traIllustration));
 		action.click(traIllustration).perform();
 		// wait.until(ExpectedConditions.urlContains("/tree/traversals-illustration/"));
 
 	}
 
-	public String navigate_Trave_Ill() {
-		String afterNavigation = driver.getCurrentUrl();
-		System.out.println("check after click" + afterNavigation);
-		return afterNavigation;
-
-	}
-
+	
 	public void binary_Tree() {
 		wait.until(ExpectedConditions.visibilityOf(binaryTrees));
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", binaryTrees);
+		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", binaryTrees);
 		action.scrollToElement(binaryTrees).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(binaryTrees));
 		action.click(binaryTrees).perform();
 		wait.until(ExpectedConditions.urlContains("/tree/binary-trees/"));
 	}
@@ -177,8 +193,9 @@ public class TreePage {
 
 	public void types_ofBinary() {
 		wait.until(ExpectedConditions.visibilityOf(typofBinary));
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", typofBinary);
+		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", typofBinary);
 		action.scrollToElement(typofBinary).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(typofBinary));
 		action.click(typofBinary).perform();
 		wait.until(ExpectedConditions.urlContains("tree/types-of-binary-trees/"));
 	}
@@ -191,8 +208,9 @@ public class TreePage {
 
 	public void Impl_in_Python() {
 		wait.until(ExpectedConditions.visibilityOf(impPython));
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", impPython);
+		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", impPython);
 		action.scrollToElement(impPython).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(impPython));
 		action.click(impPython).perform();
 		wait.until(ExpectedConditions.urlContains("/tree/implementation-in-python/"));
 	}
@@ -204,39 +222,44 @@ public class TreePage {
 
 	public void binary_Tree_Travers() {
 		wait.until(ExpectedConditions.visibilityOf(binaryTraversal));
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", binaryTraversal);
+		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", binaryTraversal);
 		action.scrollToElement(binaryTraversal).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(binaryTraversal));
 		action.click(binaryTraversal).perform();
 		wait.until(ExpectedConditions.urlContains("/tree/binary-tree-traversals/"));
 	}
 	public void app_of_binaryTrees() {
 		wait.until(ExpectedConditions.visibilityOf(appofBinary));
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", appofBinary);
+		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", appofBinary);
 		action.scrollToElement(appofBinary).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(appofBinary));
 		action.click(appofBinary).perform();
 
 	}
 
 	public void imp_of_binaryTrees() {
 		wait.until(ExpectedConditions.visibilityOf(impOfBinary));
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", impOfBinary);
+//		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", impOfBinary);
 		action.scrollToElement(impOfBinary).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(impOfBinary));
 		action.click(impOfBinary).perform();
 
 	}
 
 	public void binary_Search() {
 		wait.until(ExpectedConditions.visibilityOf(binarySearch));
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", binarySearch);
+		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", binarySearch);
 		action.scrollToElement(binarySearch).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(binarySearch));
 		action.click(binarySearch).perform();
 
 	}
 
 	public void Implement_OfBst() {
 		wait.until(ExpectedConditions.visibilityOf(impOfBST));
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", impOfBST);
+		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", impOfBST);
 		action.scrollToElement(impOfBST).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(impOfBST));
 		action.click(impOfBST).perform();
 
 	}
@@ -247,8 +270,14 @@ public class TreePage {
 		action.scrollToElement(traIllustration).perform();
 		action.click(traIllustration).perform();
 		wait.until(ExpectedConditions.visibilityOf(tryHereButton));
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", tryHereButton);
-		action.click(tryHereButton).perform();
+	    action.click(tryHereButton).perform();
 	}
+	
+public void click_TryHere() {
+	wait.until(ExpectedConditions.elementToBeClickable(tryHereButton));
+	action.scrollToElement(tryHereButton).perform();
+	action.click(tryHereButton).perform();
+}
+
 
 }

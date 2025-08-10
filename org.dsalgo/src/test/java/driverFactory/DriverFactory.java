@@ -9,15 +9,14 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
-	
+
 	public WebDriver driver;
 	
 	//ThreadLocal Driver 
 	public static ThreadLocal<WebDriver> tldriver = new ThreadLocal<>();
-	
+	                                   //key or name
 	public WebDriver initDriver(String browser) throws IOException {
-		//for cross browser testing and setting tldriver to driver using set method
-		
+		//for cross browser testing and setting tldriver to driver using set method		
 		switch (browser.toLowerCase()) {
 		case "chrome":
 			tldriver.set(new ChromeDriver());
