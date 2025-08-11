@@ -1,6 +1,7 @@
 package testMethodsPackage;
 
 
+import java.io.IOException;
 import java.time.Duration;
 
 
@@ -14,24 +15,28 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import pageObjects.LaunchPage;
+import driverFactory.DriverFactory;
+import pageFactory.LaunchPage;
 
 
 
-public class LaunchTest extends BaseTest {
-  
+public class LaunchTest  {
+	
+	LaunchPage Launchpf;
+	
 	@BeforeMethod
-	void launch()
-	{
-		
-		Launchpf.geturl();
+	@Parameters("browser")
+	public void setup(@Optional("chrome") String browser) throws IOException, InterruptedException {
+			DriverFactory driverFact = new DriverFactory();
+		driverFact.initDriver(browser);
+	 Launchpf = new LaunchPage();
+		Launchpf.loadurl();
 	}
 	
-	
-
     @Test
     void checkmsg()
     {
@@ -48,6 +53,10 @@ public class LaunchTest extends BaseTest {
    	 String actmsg = Launchpf.gettitle();
 		String expmsg = "NumpyNinja";
 		Assert.assertEquals(actmsg, expmsg, "user is not on the homepage with title numpyninja");
+    }
+    @AfterMethod
+    public void tearDown() {
+        DriverFactory.quitDriver();
     }
 
 }

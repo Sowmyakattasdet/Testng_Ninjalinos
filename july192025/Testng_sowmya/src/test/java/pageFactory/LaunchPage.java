@@ -1,34 +1,35 @@
-package pageObjects;
+package pageFactory;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-//import driverManager.Passing_Driver;
+
+import driverFactory.DriverFactory;
+import utils.ConfigReaderTest;
 
 public class LaunchPage {
 	
  WebDriver driver;
+ ConfigReaderTest config;
 
-	public LaunchPage(WebDriver driver )
+
+
+	public LaunchPage()
 	{
-		this.driver=driver;
-		PageFactory.initElements(driver,this);
+		this.driver = DriverFactory.getdriver();//initialize the driver
+		PageFactory.initElements(driver, this); //page factory initiate element
+		
+		
 	}
 	
-	
-//
-//	private WebDriver driver;
-//	Actions action;
-//	String browser;
-//	WebDriverWait wait;
-//	CommonMethod cmnMethod;
+
 
 	@FindBy(xpath = "//*[text()='You are at the right place']")
 	WebElement message;
@@ -40,15 +41,7 @@ public class LaunchPage {
 	@FindBy(xpath = "//*[text()='NumpyNinja']")
 	WebElement numpyNinja;
 
-//	public Launchpf(Passing_Driver passdr) throws IOException {
 
-//		this.driver = passdr.getDriver();
-//		this.action = new Actions(driver);
-//		PageFactory.initElements(driver, this);
-//		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//		this.cmnMethod = new CommonMethod(passdr);
-//
-//	}
 
 	public void clickgetstarted() {
 		btn_getstarted.click();
@@ -65,10 +58,12 @@ public class LaunchPage {
 		
 	}
 
-//	public void geturl() {
-//		cmnMethod.get_testUrl();
-//
-//	}
+	public void loadurl() throws IOException {
+		config = new ConfigReaderTest();
+		Properties prop = config.readConfig();
+		String url = prop.getProperty("testurl");
+		driver.get(url);
+	}
 
 	public String gettextmsg() {
 		String text = message.getText();

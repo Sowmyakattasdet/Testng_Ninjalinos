@@ -1,4 +1,4 @@
-package pageObjects;
+package pageFactory;
 
 import java.time.Duration;
 
@@ -8,7 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import driverFactory.DriverFactory;
 
 //import driverManager.Passing_Driver;
 
@@ -16,14 +19,16 @@ public class HomePage {
 
 	WebDriver driver;
 	JavascriptExecutor js;
+	private WebDriverWait wait;
 	
 	
 
-	public HomePage(WebDriver driver )
+	public HomePage()
 	{
-		this.driver=driver;
-		PageFactory.initElements(driver,this);
-		js = (JavascriptExecutor) driver;
+		this.driver = DriverFactory.getdriver();//initialize the driver
+		PageFactory.initElements(driver, this); //page factory initiate element
+		
+		this.wait= new WebDriverWait(driver,Duration.ofSeconds(30));
 	}
 	// Locators
 
@@ -106,15 +111,19 @@ public class HomePage {
 	}
 
 	public void clickgetstartedStack() {
-		js.executeScript("window.scrollBy(0,400)");
-		getstartedButton_Stack.click();
-
+		if(getstartedButton_Stack.isDisplayed()) {
+			wait.until(ExpectedConditions.elementToBeClickable(getstartedButton_Stack)).click();
+		}
+		
+		
 	}
 
 	public void clickgetstartedQueue() {
+		if(getstartedButton_Queue.isDisplayed()) {
+			wait.until(ExpectedConditions.elementToBeClickable(getstartedButton_Queue)).click();
+		}
 		
-		js.executeScript("window.scrollBy(0,400)");
-		getstartedButton_Queue.click();
+		
 	}
 	public void clickgsQueue() 
 	{
@@ -124,15 +133,17 @@ public class HomePage {
 	}
 
 	public void clickgetstartedTree() {
+		if(getstartedButton_Tree.isDisplayed()) {
+			wait.until(ExpectedConditions.elementToBeClickable(getstartedButton_Tree)).click();
+		}
 		
-		js.executeScript("window.scrollBy(0,400)");
-		getstartedButton_Tree.click();
 	}
 
 	public void clickgetstartedGraph() {
+		if(getstartedButton_Graph.isDisplayed()) {
+			wait.until(ExpectedConditions.elementToBeClickable(getstartedButton_Graph)).click();
+		}
 		
-		js.executeScript("window.scrollBy(0,400)");
-		getstartedButton_Graph.click();
 	}
 
 	public void clickDropdownbox() {

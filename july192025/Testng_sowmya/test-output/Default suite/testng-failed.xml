@@ -5,10 +5,10 @@
     <classes>
       <class name="testMethodsPackage.LaunchTest">
         <methods>
-          <include name="browser"/>
+          <include name="setup"/>
           <include name="checkmsg"/>
           <include name="clickgetstarted"/>
-          <include name="tearDown"/>
+          <include name="launch"/>
         </methods>
       </class> <!-- testMethodsPackage.LaunchTest -->
     </classes>

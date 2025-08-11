@@ -1,45 +1,67 @@
 package testMethodsPackage;
 
-import java.time.Duration;
+import java.io.File;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.FileInputStream;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-import pageObjects.HomePage;
-import pageObjects.LaunchPage;
+import com.aventstack.chaintest.plugins.ChainTestListener;
+
+import driverFactory.DriverFactory_TestNG;
+import io.qameta.allure.Allure;
+import io.qameta.allure.Attachment;
+import pageFactory.BasePage;
+
 
 public class BaseTest {
-	public  WebDriver driver;
-	LaunchPage Launchpf;
-	 HomePage Homepf;
+	
+
+	
 		
-	
-	
+	@Parameters({"browser"})	
 	@BeforeMethod
-	@Parameters({"browser"})
-	void browser(String br)
-	{
-		switch(br.toLowerCase())
-		{
-		case "chrome": driver=new ChromeDriver();break;
-		case "firefox": driver=new FirefoxDriver();break;
-		case "edge": driver=new EdgeDriver();break;
-		default: System.out.println("Invalid browser");return;
-		}
+	public void open_website(String br) throws IOException {
+		DriverFactory_TestNG df = new DriverFactory_TestNG();
+		df.init_browser(br);
+		BasePage base;
+		base = new BasePage();
+		base.launch_webpage();
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().window().maximize();
-		Launchpf = new LaunchPage(driver);
-		Homepf = new HomePage(driver);
+	}
+		
+	
+	@AfterMethod
+	public void teardownDriver() {
+		DriverFactory_TestNG.tear_driver();
 
 	}
-	 @AfterMethod
-	    void tearDown()
-	    {
-	    	Launchpf.quitdriver();
-	    }}
+	
+	//allure generate --clean target/allure-results -o target/allure-report
+	//allure open target/allure-report
+	//@Attachment(value = "Screenshot", type = "image/jpg")
+	public void failed_screenshot(String testMethodName) throws IOException {
+		
+		//byte[] screenshot_for_allureReport = ((TakesScreenshot)DriverFactory_TestNG.getDriver()).getScreenshotAs(OutputType.BYTES);
+		File screenshot = ((TakesScreenshot)DriverFactory_TestNG.getDriver()).getScreenshotAs(OutputType.FILE);
+		File savedScreenshot = new File("target/screenshots/"+"screenshot_"+testMethodName+".jpg");
+		FileUtils.copyFile(screenshot, savedScreenshot);
+		try (InputStream is = new FileInputStream(savedScreenshot)) {
+	        Allure.addAttachment("Screenshot", "image/jpg", is, "jpg");
+	    }
+		ChainTestListener.embed(savedScreenshot, "image/jpg");
+		//return screenshot_for_allureReport;
+	}
+}
+
+		
+		
+	
