@@ -1,4 +1,4 @@
-package testMethodsPackage;
+package testCases;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -17,11 +17,11 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import driverFactory.DriverFactory;
+import driverFactory.DriverFactory_TestNG;
 import pageFactory.HomePage;
 import pageFactory.LaunchPage;
 import pageFactory.LoginPage;
-import utils.ExcelReaderTestNg;
+import utils.ExcelReader;
 
 public class LoginTest {
   //  WebDriver driver;
@@ -33,20 +33,20 @@ public class LoginTest {
 	 @BeforeMethod
 		@Parameters("browser")
 		public void setup(@Optional("chrome") String browser) throws IOException, InterruptedException {
-				DriverFactory driverFact = new DriverFactory();
-			driverFact.initDriver(browser);
+				DriverFactory_TestNG driverFact = new DriverFactory_TestNG();
+			driverFact.init_browser(browser);
 		 Launchpf = new LaunchPage();
 		 Homepf =new HomePage();
 		 Loginpf =new LoginPage();
-			Launchpf.loadurl();
+		 Launchpf.get_testUrl();
 			Launchpf.clickgetstarted();
 		}
 			 
 	
-    @Test(dataProvider = "validlogin",dataProviderClass=ExcelReaderTestNg.class)
-    public void validlogin(String username, String password) {
+    @Test//(dataProvider = "validlogin",dataProviderClass=ExcelReader.class)
+    public void validlogin() {//(String username, String password) {
         Loginpf.clickSigninLink();
-        Loginpf.setdata(username, password);
+        Loginpf.setdata(null, null);
         Loginpf.clickLoginbutton();
          }
 //    @Test(dataProvider = "invalidlogin1",dataProviderClass=ExcelReaderTestNg.class)

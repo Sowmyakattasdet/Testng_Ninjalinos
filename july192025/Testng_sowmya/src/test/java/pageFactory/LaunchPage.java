@@ -11,19 +11,19 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-import driverFactory.DriverFactory;
-import utils.ConfigReaderTest;
+import driverFactory.DriverFactory_TestNG;
+import utils.ConfigReader;
 
 public class LaunchPage {
 	
  WebDriver driver;
- ConfigReaderTest config;
+ ConfigReader config;
 
 
 
 	public LaunchPage()
 	{
-		this.driver = DriverFactory.getdriver();//initialize the driver
+		this.driver = DriverFactory_TestNG.getdriver();//initialize the driver
 		PageFactory.initElements(driver, this); //page factory initiate element
 		
 		
@@ -58,12 +58,17 @@ public class LaunchPage {
 		
 	}
 
-	public void loadurl() throws IOException {
-		config = new ConfigReaderTest();
-		Properties prop = config.readConfig();
-		String url = prop.getProperty("testurl");
-		driver.get(url);
+	public void get_testUrl() throws IOException {
+		config = new ConfigReader();
+		driver.get(config.get_prop_value("testurl"));
 	}
+
+//	public void loadurl() throws IOException {
+//		config = new ConfigReader();
+//		Properties prop = config.readConfig();
+//		String url = prop.getProperty("testurl");
+//		driver.get(url);
+//	}
 
 	public String gettextmsg() {
 		String text = message.getText();

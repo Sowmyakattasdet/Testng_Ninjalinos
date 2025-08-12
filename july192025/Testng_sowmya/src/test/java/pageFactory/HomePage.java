@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import driverFactory.DriverFactory;
+import driverFactory.DriverFactory_TestNG;
 
 //import driverManager.Passing_Driver;
 
@@ -25,7 +25,7 @@ public class HomePage {
 
 	public HomePage()
 	{
-		this.driver = DriverFactory.getdriver();//initialize the driver
+		this.driver = DriverFactory_TestNG.getdriver();//initialize the driver
 		PageFactory.initElements(driver, this); //page factory initiate element
 		
 		this.wait= new WebDriverWait(driver,Duration.ofSeconds(30));

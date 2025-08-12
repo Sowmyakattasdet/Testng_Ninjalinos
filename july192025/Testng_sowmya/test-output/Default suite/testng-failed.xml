@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testMethodsPackage.LaunchTest">
+      <class name="testCases.DatastructureTest">
         <methods>
           <include name="setup"/>
-          <include name="checkmsg"/>
-          <include name="clickgetstarted"/>
-          <include name="launch"/>
+          <include name="tryeditornocode"/>
         </methods>
-      </class> <!-- testMethodsPackage.LaunchTest -->
+      </class> <!-- testCases.DatastructureTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

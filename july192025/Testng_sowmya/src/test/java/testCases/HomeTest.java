@@ -1,4 +1,4 @@
-package testMethodsPackage;
+package testCases;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -13,7 +13,7 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import driverFactory.DriverFactory;
+import driverFactory.DriverFactory_TestNG;
 import pageFactory.HomePage;
 import pageFactory.LaunchPage;
 
@@ -24,11 +24,11 @@ HomePage Homepf;
 	@BeforeMethod
 	@Parameters("browser")
 	public void setup(@Optional("chrome") String browser) throws IOException, InterruptedException {
-			DriverFactory driverFact = new DriverFactory();
-		driverFact.initDriver(browser);
+			DriverFactory_TestNG driverFact = new DriverFactory_TestNG();
+		driverFact.init_browser(browser);
 	 Launchpf = new LaunchPage();
 	 Homepf =new HomePage();
-		Launchpf.loadurl();
+	 Launchpf.get_testUrl();
 		Launchpf.clickgetstarted();
 	}
 		 
@@ -192,7 +192,7 @@ HomePage Homepf;
 
 		  @AfterMethod
 		    public void tearDown() {
-		        DriverFactory.quitDriver();
+		        DriverFactory_TestNG.tear_driver();
 		    }
 
 }

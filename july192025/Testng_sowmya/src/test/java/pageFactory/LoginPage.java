@@ -11,7 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import driverFactory.DriverFactory;
+import driverFactory.DriverFactory_TestNG;
 
 
 
@@ -23,7 +23,7 @@ public class LoginPage {
 
 			public LoginPage( )
 			{
-				this.driver = DriverFactory.getdriver();//initialize the driver
+				this.driver = DriverFactory_TestNG.getdriver();//initialize the driver
 				PageFactory.initElements(driver, this); //page factory initiate element
 			}
 
@@ -65,8 +65,8 @@ public class LoginPage {
 		return msg;
 	}
 	public void setdata(String username,String password) {
-		username_textbox.sendKeys(username);
-		password_textbox.sendKeys(password);
+		username_textbox.sendKeys("ninjalinos@work.com");
+		password_textbox.sendKeys("sdet218920@");
 		
 		
 	}

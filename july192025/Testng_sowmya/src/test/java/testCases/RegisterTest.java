@@ -1,4 +1,4 @@
-package testMethodsPackage;
+package testCases;
 
 public class RegisterTest {
 

@@ -8,14 +8,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class DriverFactory {
+public class DriverFactory_TestNG {
 	
 	public WebDriver driver;
 	
 	//ThreadLocal Driver 
 	public static ThreadLocal<WebDriver> tldriver = new ThreadLocal<>();
 	
-	public WebDriver initDriver(String browser) throws IOException {
+	public WebDriver init_browser(String browser) throws IOException {
 		//for cross browser testing and setting tldriver to driver using set method
 		
 		switch (browser.toLowerCase()) {
@@ -50,7 +50,7 @@ public static WebDriver getdriver() {
 		return tldriver.get();
 	}
 
-public static void quitDriver() {
+public static void tear_driver() {
 	if (tldriver.get() != null) {
 		tldriver.get().quit();
 		tldriver.remove();

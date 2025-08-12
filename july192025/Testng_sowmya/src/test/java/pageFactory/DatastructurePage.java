@@ -14,18 +14,23 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import driverFactory.DriverFactory_TestNG;
+
 
 
 public class DatastructurePage {
-
-	private WebDriver driver;
+	WebDriver driver;
+	JavascriptExecutor js;
+	private WebDriverWait wait;
+	
+	//private WebDriver driver;
 	Actions action;
-	String browser;
-	WebDriverWait wait;
+	//String browser;
+	//WebDriverWait wait;
 
 //	ExcelReaderFile excelReader;
 
-	JavascriptExecutor js;
+	
 	Alert alert;
 
 	@FindBy(xpath = "//*[text()='Data Structures-Introduction']//../a")
@@ -57,13 +62,10 @@ public class DatastructurePage {
 
 	public DatastructurePage() throws IOException {
 
-		//this.driver = passdr.getDriver();
-		this.action = new Actions(driver);
-		PageFactory.initElements(driver, this);
-		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-		//this.excelReader = new ExcelReaderFile();
-		js = (JavascriptExecutor) driver;
+		this.driver = DriverFactory_TestNG.getdriver();//initialize the driver
+		PageFactory.initElements(driver, this); //page factory initiate element
+		
+		this.wait= new WebDriverWait(driver,Duration.ofSeconds(30));
 
 	}
 
@@ -97,15 +99,18 @@ public class DatastructurePage {
 	public void clickPracticeQuestionsLink() {
 		practiceQuestionsLink.click();
 	}
+	
 
 	public void navigateback() {
 		driver.navigate().back();
 	}
 
 	public void clickTryhereLink() {
-		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("window.scrollBy(0,400)");
-		tryhereLink.click();
+
+		if(tryhereLink.isDisplayed()) {
+			wait.until(ExpectedConditions.elementToBeClickable(tryhereLink)).click();
+		}
+		
 	}
 
 	public void tryeditorboxwithinvaliddata() {
