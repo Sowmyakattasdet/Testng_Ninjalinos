@@ -12,11 +12,12 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.DataProvider;
 
 public class ExcelReader {
 	
 		private static final String STRING = null;
-		public static String filePath = "src/test/resources/testData (1).xlsx";
+		public static String filePath = "./src/test/resources/testdata/testData.xlsx";
 		
 
 
@@ -51,8 +52,7 @@ public class ExcelReader {
 		    return testData;
 		}
 	    
-	}
-
+	
 //---------------------------------------------------------------
 ////package utils;
 ////
@@ -244,19 +244,21 @@ public class ExcelReader {
 //
 //}	
 //	
-//	
-//	
-//	
-//	
-//	
-//	
-//	
-//	
-//	
-//	
-//	
-//	
-//	
-//	
-//	
-//	
+		@DataProvider(name= "validlogin")
+		public String[][] getloginvalidData() throws IOException{
+			Map<String, String> testData = ExcelReader.readExcelRow("validIogin", "Sheet1");
+		  	   String username = testData.get("username");
+		  	   String password = testData.get("password");
+		  	  
+		  	 //  String expsuccessmsg = testData.get("Expmesg");
+		  //	 System.out.println(expsuccessmsg);
+//		  	   Map<String, String> testData1 = ExcelReader.readExcelRow("ValidInput", "Sheet1");
+//		  	 String username1 = testData1.get("Input");
+//		  	
+//		  	   String password1 = testData1.get("Output");
+		 	   String[][] data={ {username,password}};
+		 	                             // {username1,password1}};
+		    return data;
+		    }
+}
+

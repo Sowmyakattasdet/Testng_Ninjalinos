@@ -2,7 +2,9 @@ package pageFactory;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Map;
 
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,8 +12,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.DataProvider;
 
 import driverFactory.DriverFactory_TestNG;
+import utils.ExcelReader;
 
 
 
@@ -65,20 +69,22 @@ public class LoginPage {
 		return msg;
 	}
 	public void setdata(String username,String password) {
-		username_textbox.sendKeys("ninjalinos@work.com");
-		password_textbox.sendKeys("sdet218920@");
+		username_textbox.sendKeys(username);
+		password_textbox.sendKeys(password);
 		
 		
 	}
 
-//	public void setvalidDatafromExcel() throws IOException {
-//
-//		String username = excelReader.getData("validlogin", 1, 0);
-//		String password = excelReader.getData("validlogin", 1, 1);
-//		username_textbox.sendKeys(username);
-//		password_textbox.sendKeys(password);
-//		login_button.click();
-//	}
+	public void setvalidDatafromExcel() throws IOException {
+	Map<String, String> testData = ExcelReader.readExcelRow("validIogin", "Sheet1");
+    System.out.println(testData);
+	String username = testData.get("username");
+	String password = testData.get("password");
+		username_textbox.sendKeys(username);
+		password_textbox.sendKeys(password);
+		login_button.click();
+	}
+	
 //
 //	public void setDatafromExcelwithemptyfields() throws IOException {
 //

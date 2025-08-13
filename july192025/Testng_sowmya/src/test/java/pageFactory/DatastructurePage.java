@@ -2,6 +2,7 @@ package pageFactory;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Map;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -15,6 +16,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import driverFactory.DriverFactory_TestNG;
+import utils.ExcelReader;
 
 
 
@@ -59,6 +61,8 @@ public class DatastructurePage {
 
 	@FindBy(xpath = "//div[@align='left'] ")
 	WebElement consoleoutpt;
+	private Map<String, String> testData;
+	private String Input;
 
 	public DatastructurePage() throws IOException {
 
@@ -166,11 +170,14 @@ public class DatastructurePage {
 //				data);
 //	}
 //
-//	public void setvalidcodefromExcel() throws IOException {
-//		String data = excelReader.getData("TextEditor", 1, 0);
-//		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".CodeMirror")));
-//		js.executeScript(
-//				"let editor = document.querySelector('.CodeMirror').CodeMirror;" + "editor.setValue(arguments[0]);",
-//				data);
-//	}
+	public void setvalidcodefromExcel() throws IOException {
+		testData = ExcelReader.readExcelRow("ValidInput", "Sheet1");
+		// testData = ExcelReader.readExcelRow("ValidInput", "Sheet1");
+			System.out.println(testData);
+			Input = testData.get("Input");
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".CodeMirror")));
+		js.executeScript(
+				"let editor = document.querySelector('.CodeMirror').CodeMirror;" + "editor.setValue(arguments[0]);",
+				Input);
+	}
 }
