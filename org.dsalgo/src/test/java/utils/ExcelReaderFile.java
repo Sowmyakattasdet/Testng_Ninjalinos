@@ -27,7 +27,8 @@ public class ExcelReaderFile {
         int rowIndex = -1;
         int colIndex = -1;
 
-        // 1. Find column index from header row (row 0)
+       
+        //FINDING COL INDEX FROM HEADER ROW (ROW 0)
         XSSFRow headerRow = sheet.getRow(0);
         for (int i = 0; i < headerRow.getLastCellNum(); i++) {
             String headerValue = df.formatCellValue(headerRow.getCell(i));
@@ -44,7 +45,8 @@ public class ExcelReaderFile {
             return "";
         }
 
-        // 2. Find row index from first column
+      
+        //FINDING ROW INDEX FROM FIRST COLUMN
         for (int i = 1; i <= sheet.getLastRowNum(); i++) {
             String firstColValue = df.formatCellValue(sheet.getRow(i).getCell(0));
             if (firstColValue.equalsIgnoreCase(rowName)) {
