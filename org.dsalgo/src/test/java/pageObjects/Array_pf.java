@@ -21,9 +21,10 @@ public class Array_pf {
 
 	private WebDriver driver;
 	private WebDriverWait wait;
-	//ExcelReaderFile excelReader;
+	ExcelReaderFile excelReader;
 	private Base_pf base_pf;
 
+	
 	public Array_pf() throws IOException {
 		this.driver = DriverFactory.getDriver();
 
@@ -31,7 +32,7 @@ public class Array_pf {
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		this.base_pf = new Base_pf();
 
-		//this.excelReader = new ExcelReaderFile();
+		this.excelReader = new ExcelReaderFile();
 	}
 
 	
@@ -79,11 +80,7 @@ public class Array_pf {
 
 	// ========== Helper ==========
 
-//	private void safeClick(WebElement element) {
-//		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-//		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
-//	}
-//	
+
 	private void safeClick(WebElement element) {
 	    wait.until(ExpectedConditions.visibilityOf(element));
 	    wait.until(ExpectedConditions.elementToBeClickable(element)).click();
@@ -153,9 +150,8 @@ public class Array_pf {
 	}
 
 	public void enterValidCodeInPracticeEditor(String code) {
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", practiceQuestionEditor);
-		wait.until(ExpectedConditions.visibilityOf(practiceQuestionEditor));
-		practiceQuestionEditor.click();
+		
+		safeClick(practiceQuestionEditor);
 
 		// Use Actions to clear and type code like a user
 		Actions actions = new Actions(driver);
@@ -163,12 +159,12 @@ public class Array_pf {
 				.sendKeys(Keys.DELETE).sendKeys(code).perform();
 	}
 
-//	public void tryEditor_validCode_practiceQ1() throws IOException {
-//
-//		String validCode1 = excelReader.getData("TextEditor", 1, 0);
-//
-//		enterValidCodeInPracticeEditor(validCode1);
-//	}
+	public void tryEditor_validCode_practiceQ1() throws IOException {
+
+		String validCode1 = excelReader.getCellData("Sheet1", "Practice Q1 valid code", "PythonCode");
+
+		enterValidCodeInPracticeEditor(validCode1);
+	}
 
 //	public void tryEditor_validCode_practiceQ2() throws IOException {
 //		String validCode2 = excelReader.getData("TextEditor", 1, 0);
@@ -185,10 +181,13 @@ public class Array_pf {
 //		enterValidCodeInPracticeEditor(validCode4);
 //	}
 
-	public void tryEditor_invalidCode_practiceQ() {
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", practiceQuestionEditor);
-		practiceQuestionEditor.click();
-		practiceQuestionEditor.sendKeys("abc");
+	public void tryEditor_invalidCode_practiceQ() throws IOException {
+		String data = excelReader.getCellData("Sheet1", "Try here Invalid code", "PythonCode");
+		safeClick(practiceQuestionEditor);
+		Actions actions = new Actions(driver);
+		actions.moveToElement(practiceQuestionEditor).click().keyDown(Keys.COMMAND).sendKeys("a").keyUp(Keys.COMMAND)
+				.sendKeys(Keys.DELETE).sendKeys(data).perform();
+		//practiceQuestionEditor.sendKeys(data);
 	}
 
 	public void clickSubmit() {
