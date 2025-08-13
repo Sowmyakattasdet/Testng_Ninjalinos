@@ -62,7 +62,7 @@ public class ExcelReaderFile {
             return "";
         }
 
-        // 3. Read the cell value
+        // READING CELL VALUE
         XSSFCell cell = sheet.getRow(rowIndex).getCell(colIndex);
         String cellValue = df.formatCellValue(cell);
 
