@@ -69,12 +69,12 @@ public class BaseTest {
 		ChainTestListener.embed(savedScreenshot, "image/jpg");
 		//return screenshot_for_allureReport;
 	}
-	
-	@DataProvider(name = "pythonCodeValidandInvalid")
-	public Object[] pythonCode() throws IOException {
-		Object data[] = excelReader.getCode("TextEditor");
-		return data;
-	}
+//	
+//	@DataProvider(name = "pythonCodeValidandInvalid")
+////	public Object[] pythonCode() throws IOException {
+//	//	Object data[] = excelReader.getCode("TextEditor");
+//	//	return data;
+//	}
 }
 
 		

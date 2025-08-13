@@ -103,18 +103,18 @@ HomePage Homepf;
 //				Assert.assertEquals(actmsg, expmsg,
 //						"the user is not able to see mesg your are not logged in because no option in the dropdown");
 //		    }
-//		//GraphGetstartdBtn
-//		 @Test(priority=7)
-//		    void ClickGraphBtn() 
-//		    {
-//			 
-//			 Homepf.clickgetstartedGraph();
-//			
-//				String actmsg = Homepf.notloggedinmesg();
-//				String expmsg = "You are not logged in";
-//				Assert.assertEquals(actmsg, expmsg,
-//						"the user is not able to see mesg your are not logged in because no option in the dropdown");
-//		    }
+		//GraphGetstartdBtn
+		 @Test(priority=7)
+		    void ClickGraphBtn() 
+		    {
+			 
+			 Homepf.clickgetstartedGraph();
+			
+				String actmsg = Homepf.notloggedinmesg();
+				String expmsg = "You are not logged in";
+				Assert.assertEquals(actmsg, expmsg,
+						"the user is not able to see mesg your are not logged in because no option in the dropdown");
+		    }
 		//DropdownDS
 		@Test(priority=8)
 		void DropdownDS()
