@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="6" passed="5" failed="0" skipped="0">
+<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-13T22:25:50 CDT" name="Default suite" finished-at="2025-08-13T22:26:13 CDT" duration-ms="22343">
+  <suite started-at="2025-08-14T17:29:27 CDT" name="Default suite" finished-at="2025-08-14T17:29:51 CDT" duration-ms="23374">
     <groups>
     </groups>
-    <test started-at="2025-08-13T22:25:50 CDT" name="Default test" finished-at="2025-08-13T22:26:13 CDT" duration-ms="22343">
-      <class name="testCases.RegisterTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.RegisterTest@7d3e8655]" started-at="2025-08-13T22:25:52 CDT" name="setup" finished-at="2025-08-13T22:25:55 CDT" duration-ms="3631" status="PASS">
+    <test started-at="2025-08-14T17:29:27 CDT" name="Default test" finished-at="2025-08-14T17:29:51 CDT" duration-ms="23374">
+      <class name="testCases.LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.LoginTest@7d3e8655]" started-at="2025-08-14T17:29:29 CDT" name="setup" finished-at="2025-08-14T17:29:34 CDT" duration-ms="4504" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="invalidlogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.RegisterTest@7d3e8655]" started-at="2025-08-13T22:25:55 CDT" name="invalidlogin" data-provider="invalidRegister" finished-at="2025-08-13T22:25:56 CDT" duration-ms="336" status="PASS">
+        <test-method signature="invalidlogin(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@7d3e8655]" started-at="2025-08-14T17:29:34 CDT" name="invalidlogin" data-provider="invalidlogin" finished-at="2025-08-14T17:29:34 CDT" duration-ms="730" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,16 +30,11 @@
                 <![CDATA[]]>
               </value>
             </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidlogin -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.RegisterTest@7d3e8655]" started-at="2025-08-13T22:25:56 CDT" name="setup" finished-at="2025-08-13T22:25:59 CDT" duration-ms="3717" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.LoginTest@7d3e8655]" started-at="2025-08-14T17:29:34 CDT" name="setup" finished-at="2025-08-14T17:29:38 CDT" duration-ms="3424" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,7 +45,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="invalidlogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.RegisterTest@7d3e8655]" started-at="2025-08-13T22:25:59 CDT" name="invalidlogin" data-provider="invalidRegister" finished-at="2025-08-13T22:26:00 CDT" duration-ms="800" status="PASS">
+        <test-method signature="invalidlogin(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@7d3e8655]" started-at="2025-08-14T17:29:38 CDT" name="invalidlogin" data-provider="invalidlogin" finished-at="2025-08-14T17:29:39 CDT" duration-ms="1329" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,16 +57,11 @@
                 <![CDATA[]]>
               </value>
             </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidlogin -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.RegisterTest@7d3e8655]" started-at="2025-08-13T22:26:00 CDT" name="setup" finished-at="2025-08-13T22:26:04 CDT" duration-ms="3446" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.LoginTest@7d3e8655]" started-at="2025-08-14T17:29:39 CDT" name="setup" finished-at="2025-08-14T17:29:43 CDT" duration-ms="4052" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -82,7 +72,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="invalidlogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.RegisterTest@7d3e8655]" started-at="2025-08-13T22:26:04 CDT" name="invalidlogin" data-provider="invalidRegister" finished-at="2025-08-13T22:26:04 CDT" duration-ms="609" status="PASS">
+        <test-method signature="invalidlogin(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@7d3e8655]" started-at="2025-08-14T17:29:43 CDT" name="invalidlogin" data-provider="invalidlogin" finished-at="2025-08-14T17:29:44 CDT" duration-ms="958" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -91,19 +81,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[sdet218920@]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[asdfew]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidlogin -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.RegisterTest@7d3e8655]" started-at="2025-08-13T22:26:04 CDT" name="setup" finished-at="2025-08-13T22:26:07 CDT" duration-ms="3049" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.LoginTest@7d3e8655]" started-at="2025-08-14T17:29:44 CDT" name="setup" finished-at="2025-08-14T17:29:49 CDT" duration-ms="4829" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -114,7 +99,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="invalidlogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.RegisterTest@7d3e8655]" started-at="2025-08-13T22:26:07 CDT" name="invalidlogin" data-provider="invalidRegister" finished-at="2025-08-13T22:26:08 CDT" duration-ms="543" status="PASS">
+        <test-method signature="invalidlogin(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@7d3e8655]" started-at="2025-08-14T17:29:49 CDT" name="invalidlogin" data-provider="invalidlogin" finished-at="2025-08-14T17:29:51 CDT" duration-ms="1619" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -123,51 +108,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[sdet218920@]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[asdfew]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidlogin -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.RegisterTest@7d3e8655]" started-at="2025-08-13T22:26:08 CDT" name="setup" finished-at="2025-08-13T22:26:12 CDT" duration-ms="3936" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="invalidlogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.RegisterTest@7d3e8655]" started-at="2025-08-13T22:26:12 CDT" name="invalidlogin" data-provider="invalidRegister" finished-at="2025-08-13T22:26:13 CDT" duration-ms="988" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ninjalinos]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sdet218920@]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[abcdef]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidlogin -->
-      </class> <!-- testCases.RegisterTest -->
+      </class> <!-- testCases.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

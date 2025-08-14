@@ -88,53 +88,19 @@ public class LoginPage {
 		login_button.click();
 	}
 	
-//
-//	public void setDatafromExcelwithemptyfields() throws IOException {
-//
-//		String username = excelReader.getData("login", 1, 0);
-//		String password = excelReader.getData("login", 1, 1);
-//		username_textbox.sendKeys(username);
-//		password_textbox.sendKeys(password);
-//		login_button.click();
-//	}
-//
-//	public void setDatafromExcelwithusernameNoPassword() throws IOException {
-//
-//		String username = excelReader.getData("login", 2, 0);
-//		String password = excelReader.getData("login", 2, 1);
-//		username_textbox.sendKeys(username);
-//		password_textbox.sendKeys(password);
-//		login_button.click();
-//	}
 
-//	public void setDatafromExcelwithPasswordnousername() throws IOException {
-//
-//		String username = excelReader.getData("login", 3, 0);
-//		String password = excelReader.getData("login", 3, 1);
-//		username_textbox.sendKeys(username);
-//		password_textbox.sendKeys(password);
-//		login_button.click();
-//	}
-//
-//	public void setDatafromExcelinvalidData() throws IOException {
-//
-//		String username = excelReader.getData("login", 4, 0);
-//		String password = excelReader.getData("login", 4, 1);
-//		username_textbox.sendKeys(username);
-//		password_textbox.sendKeys(password);
-//		login_button.click();
-//	}
+
 
 	public String invalidAssertionusernamebox() {
 
 		String validationMsg = (String) js.executeScript("return arguments[0].validationMessage;", username_textbox);
 		return validationMsg;
 	}
-//
-//	public String invalidAssertiopasswordbox() {
-//
-//		String validationMsg = (String) js.executeScript("return arguments[0].validationMessage;", password_textbox);
-//		return validationMsg;
-//	}
+
+	public String invalidAssertiopasswordbox() {
+
+		String validationMsg = (String) js.executeScript("return arguments[0].validationMessage;", password_textbox);
+		return validationMsg;
+	}
 
 }
