@@ -249,15 +249,8 @@ public class ExcelReader {
 			Map<String, String> testData = ExcelReader.readExcelRow("Valid credential", "Sheet1");
 		  	   String username = testData.get("UserName");
 		  	   String password = testData.get("Password");
-		  	  
-		  	 // String expsuccessmsg = testData.get("ExpectedMsg");
-		  	 //System.out.println(expsuccessmsg);
-//		  	   Map<String, String> testData1 = ExcelReader.readExcelRow("ValidInput", "Sheet1");
-//		  	 String username1 = testData1.get("Input");
-//		  	
-//		  	   String password1 = testData1.get("Output");
 		 	   String[][] data={ {username,password}};
-		 	                             // {username1,password1}};
+		 	                             
 		    return data;
 		    }
 		@DataProvider(name= "invalidlogin")
@@ -284,5 +277,60 @@ public class ExcelReader {
 		 	                            {username4,password4}};
 		    return data;
 		    }
+		
+		@DataProvider(name= "validRegister")
+		public String[][] getvalidregister() throws IOException{
+			Map<String, String> testData = ExcelReader.readExcelRow("validRegister", "Sheet1");
+		  	   String username = testData.get("UserName");
+		  	   String password = testData.get("Password");
+		  	 String confirmpassword = testData.get("Confirmpassword");
+		  	   
+		 	   String[][] data={ {username,password,confirmpassword}};
+		 	                             
+		    return data;
+		    }
+		@DataProvider(name= "invalidRegister")
+		public String[][] getinvalidregister() throws IOException{
+			Map<String, String> testData1 = ExcelReader.readExcelRow("Register1", "Sheet1");
+		  	   String username1 = testData1.get("UserName");
+		  	   String password1 = testData1.get("Password");
+		  	 String confirmpassword1 = testData1.get("Confirmpassword");
+		  	 
+		  	Map<String, String> testData2 = ExcelReader.readExcelRow("Register2", "Sheet1");
+		  	   String username2 = testData2.get("UserName");
+		  	   String password2 = testData2.get("Password");
+		  	 String confirmpassword2 = testData2.get("Confirmpassword");
+		  	 
+		  	Map<String, String> testData3 = ExcelReader.readExcelRow("Register3", "Sheet1");
+		  	   String username3 = testData3.get("UserName");
+		  	   String password3 = testData3.get("Password");
+		  	 String confirmpassword3 = testData3.get("Confirmpassword");
+		  	 
+		  	Map<String, String> testData4 = ExcelReader.readExcelRow("Register4", "Sheet1");
+		  	   String username4 = testData4.get("UserName");
+		  	   String password4 = testData4.get("Password");
+		  	 String confirmpassword4 = testData4.get("Confirmpassword");
+		  	 
+		  	Map<String, String> testData5 = ExcelReader.readExcelRow("Register5", "Sheet1");
+		  	   String username5 = testData5.get("UserName");
+		  	   String password5 = testData5.get("Password");
+		  	 String confirmpassword5 = testData5.get("Confirmpassword");
+		  	   
+		 	   String[][] data={ {username1,password1,confirmpassword1},
+		 			  {username2,password2,confirmpassword2},
+		 			 {username3,password3,confirmpassword3},
+		 			 {username4,password4,confirmpassword4},
+		 			{username5,password5,confirmpassword5}
+		 	   };
+		 	                             
+		    return data;
+		    }
+		
+		
+		
+		
+		
+		
+		
 }
 

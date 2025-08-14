@@ -11,17 +11,22 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import driverFactory.DriverFactory_TestNG;
+
 
 
 public class RegisterPage {
 
-	private WebDriver driver;
-	Actions action;
-	String browser;
-	WebDriverWait wait;
-	//ExcelReaderFile excelReader;
-	JavascriptExecutor js;
+	 WebDriver driver;
+	 JavascriptExecutor js;
 
+		public RegisterPage()
+		{
+			this.driver = DriverFactory_TestNG.getdriver();//initialize the driver
+			PageFactory.initElements(driver, this); //page factory initiate element
+			js = (JavascriptExecutor) driver;
+
+		}
 	// Locators
 
 	@FindBy(xpath = "//*[@name='username']")
@@ -39,26 +44,23 @@ public class RegisterPage {
 	@FindBy(xpath = "//div[@class=\"alert alert-primary\"]")
 	WebElement missmatchPasswordMessage;
 
-	public RegisterPage() throws IOException {
-
-	//	this.driver = passdr.getDriver();
-		this.action = new Actions(driver);
-		PageFactory.initElements(driver, this);
-		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	//	this.excelReader = new ExcelReaderFile();
-		js = (JavascriptExecutor) driver;
-	}
+	
 
 //action methods
 
-	public void setusername(String username) {
-		usernameTextbox.sendKeys("ninjalinos@work.com");
-	}
+//	public void setusername(String username) {
+//		usernameTextbox.sendKeys("ninjalinos@work.com");
+//	}
 
 	public void setinvalidusername(String username) {
 		usernameTextbox.sendKeys(username);
 	}
-
+	public void setdatas(String username,String password,String confirmpassword) {
+		usernameTextbox.sendKeys(username);
+		passwordTextbox.sendKeys(password);
+		confirmpasswordTextbox.sendKeys(confirmpassword);
+	}
+		
 	public void setinvalidpassword(String password) {
 		passwordTextbox.sendKeys(password);
 	}
