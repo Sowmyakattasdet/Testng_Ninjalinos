@@ -24,11 +24,14 @@ public class LoginPage {
 
 		
 		 WebDriver driver;
+		 JavascriptExecutor js;
 
 			public LoginPage( )
 			{
 				this.driver = DriverFactory_TestNG.getdriver();//initialize the driver
 				PageFactory.initElements(driver, this); //page factory initiate element
+				js = (JavascriptExecutor) driver;
+
 			}
 
 	@FindBy(xpath = "//*[text()='Sign in']")
@@ -122,11 +125,11 @@ public class LoginPage {
 //		login_button.click();
 //	}
 
-//	public String invalidAssertionusernamebox() {
-//
-//		String validationMsg = (String) js.executeScript("return arguments[0].validationMessage;", username_textbox);
-//		return validationMsg;
-//	}
+	public String invalidAssertionusernamebox() {
+
+		String validationMsg = (String) js.executeScript("return arguments[0].validationMessage;", username_textbox);
+		return validationMsg;
+	}
 //
 //	public String invalidAssertiopasswordbox() {
 //

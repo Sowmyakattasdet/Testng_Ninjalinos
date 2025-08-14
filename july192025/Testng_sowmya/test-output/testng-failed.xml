@@ -5,7 +5,7 @@
     <classes>
       <class name="testCases.LoginTest">
         <methods>
-          <include name="validlogin" invocation-numbers="0"/>
+          <include name="invalidlogin" invocation-numbers="1"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.LoginTest -->

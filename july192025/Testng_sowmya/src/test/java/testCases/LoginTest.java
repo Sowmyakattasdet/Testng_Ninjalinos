@@ -59,12 +59,27 @@ public class LoginTest {
  //        }
     @Test(dataProvider = "validlogin",dataProviderClass=ExcelReader.class)
     public void validlogin(String username, String password) throws IOException {
+    	testData = ExcelReader.readExcelRow("Valid credential", "Sheet1");
         Loginpf.clickSigninLink();
         Loginpf.setdata(username, password);
         Loginpf.clickLoginbutton();
-//        String expsuccessmsg="You are logged in";
-//        String actualsuccessfullmessage = Loginpf.loginsuccesfullmessage();
-//		Assert.assertEquals(expsuccessmsg, actualsuccessfullmessage, "user is not logged in");
+        String expsuccessmsg = testData.get("ExpectedMsg");
+         String actualsuccessfullmessage = Loginpf.loginsuccesfullmessage();
+		Assert.assertEquals(expsuccessmsg, actualsuccessfullmessage, "user is not logged in");
+
+         }
+    @Test(dataProvider = "invalidlogin",dataProviderClass=ExcelReader.class)
+    public void invalidlogin(String username, String password) throws IOException {
+    	testData = ExcelReader.readExcelRow("Login1", "Sheet1");
+    	  testData = ExcelReader.readExcelRow("Login2", "Sheet1");
+        Loginpf.clickSigninLink();
+        Loginpf.setdata(username, password);
+        Loginpf.clickLoginbutton();
+        String experrormsg = testData.get("ErrorMessage");
+       	String actualerrormessage = Loginpf.invalidAssertionusernamebox();
+       
+       		Assert.assertEquals(experrormsg, actualerrormessage, "user is not logged in");
+       
 
          }
 //

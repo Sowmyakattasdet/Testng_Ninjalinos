@@ -17,7 +17,7 @@ import org.testng.annotations.DataProvider;
 public class ExcelReader {
 	
 		private static final String STRING = null;
-		public static String filePath = "./src/test/resources/testdata/testData.xlsx";
+		public static String filePath = "./src/test/resources/testdata/TestNG_data.xlsx";
 		
 
 
@@ -245,19 +245,43 @@ public class ExcelReader {
 //}	
 //	
 		@DataProvider(name= "validlogin")
-		public String[][] getloginvalidData() throws IOException{
-			Map<String, String> testData = ExcelReader.readExcelRow("validIogin", "Sheet1");
-		  	   String username = testData.get("username");
-		  	   String password = testData.get("password");
+		public String[][] getlogvalidData() throws IOException{
+			Map<String, String> testData = ExcelReader.readExcelRow("Valid credential", "Sheet1");
+		  	   String username = testData.get("UserName");
+		  	   String password = testData.get("Password");
 		  	  
-		  	 //  String expsuccessmsg = testData.get("Expmesg");
-		  //	 System.out.println(expsuccessmsg);
+		  	 // String expsuccessmsg = testData.get("ExpectedMsg");
+		  	 //System.out.println(expsuccessmsg);
 //		  	   Map<String, String> testData1 = ExcelReader.readExcelRow("ValidInput", "Sheet1");
 //		  	 String username1 = testData1.get("Input");
 //		  	
 //		  	   String password1 = testData1.get("Output");
 		 	   String[][] data={ {username,password}};
 		 	                             // {username1,password1}};
+		    return data;
+		    }
+		@DataProvider(name= "invalidlogin")
+		public String[][] getloginvalidData() throws IOException{
+			Map<String, String> testData1 = ExcelReader.readExcelRow("Login1", "Sheet1");
+		  	   String username1 = testData1.get("UserName");
+		  	   String password1 = testData1.get("Password");
+		  	   
+	  	   Map<String, String> testData2 = ExcelReader.readExcelRow("Login2", "Sheet1");
+	  	 String username2 = testData2.get("UserName");
+	  	 String password2 = testData2.get("Password");
+	  	 
+	  	  Map<String, String> testData3 = ExcelReader.readExcelRow("Login3", "Sheet1");
+		  	 String username3 = testData3.get("UserName");
+		  	 String password3 = testData3.get("Password");
+		  	 
+		  	 Map<String, String> testData4 = ExcelReader.readExcelRow("Login4", "Sheet1");
+		  	 String username4 = testData4.get("UserName");
+		  	 String password4 = testData4.get("Password");
+	  	 
+		 	   String[][] data={ {username1,password1},
+		 	                              {username2,password2},
+		 	                             {username3,password3},
+		 	                            {username4,password4}};
 		    return data;
 		    }
 }
