@@ -64,7 +64,7 @@ public class RegisterTest {
 	      
 		 Registerpf.setdatas(username, password, confirmpassword);
 	       Registerpf.clickRegisterbutton();
-	       if(testData==(readExcelRow("validRegistre", "Sheet1")))
+	       if(testData== ExcelReader.readExcelRow("validRegister", "Sheet1"))
 	         {
 	    	   String expsuccessmsg = testData.get("ErrorMessage");
 	    	   
@@ -72,10 +72,10 @@ public class RegisterTest {
 	   		System.out.println(expsuccessmsg);
 	   		System.out.println(actmsg);
 	   		Assert.assertEquals(actmsg, expsuccessmsg , "user not able to see 'user is already registered'");
-	   		Assert.fail();
+	   	
          }
 	       
-	        else if(testData1==(ExcelReader.readExcelRow("Register1", "Sheet1")))
+	        else if(testData1==ExcelReader.readExcelRow("Register1", "Sheet1"))
 	       {
 	    	   String experrormsg = testData1.get("ErrorMessage");
 	    	   String acterrormsg = Registerpf.invalidAssertionUsernamebox();
