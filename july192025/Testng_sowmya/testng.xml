@@ -8,7 +8,7 @@
     <parameter name="browser" value="chrome"/>
     <classes>
     
-      <class name="testCases.DatastructureTest"/>
+      <class name="testCases.LoginTest"/>
     </classes>
   </test> <!-- Test -->
   

@@ -23,6 +23,7 @@ import driverFactory.DriverFactory_TestNG;
 import pageFactory.HomePage;
 import pageFactory.LaunchPage;
 import pageFactory.LoginPage;
+import utils.Dataprovider;
 import utils.ExcelReader;
 
 public class LoginTest {
@@ -48,27 +49,19 @@ public class LoginTest {
 			Launchpf.clickgetstarted();
 			  Loginpf.clickSigninLink();
 		}
-    @Test(dataProvider = "validlogin",dataProviderClass=ExcelReader.class)
-    public void validlogin(String username, String password) throws IOException {
-    	testData = ExcelReader.readExcelRow("Valid credential", "Sheet1");
-       
-        Loginpf.setdata(username, password);
-        Loginpf.clickLoginbutton();
-        String expsuccessmsg = testData.get("ExpectedMsg");
-         String actualsuccessfullmessage = Loginpf.loginsuccesfullmessage();
-		Assert.assertEquals(expsuccessmsg, actualsuccessfullmessage, "user is not logged in");
 
-         }
-    @Test(dataProvider = "invalidlogin",dataProviderClass=ExcelReader.class)
-    public void invalidlogin(String username, String password) throws IOException {
-   	testData1 = ExcelReader.readExcelRow("Login1", "Sheet1");
-    	  testData2 = ExcelReader.readExcelRow("Login2", "Sheet1");
-    	  testData3 = ExcelReader.readExcelRow("Login3", "Sheet1");
-    	  testData4 = ExcelReader.readExcelRow("Login3", "Sheet1");
-     
+    @Test(dataProvider = "validandinvalidlogin",dataProviderClass=Dataprovider.class)
+    public void validandinvalidlogin(String username, String password) throws IOException {
+  
         Loginpf.setdata(username, password);
         Loginpf.clickLoginbutton();
-       if(testData1  == ExcelReader.readExcelRow("Login1", "Sheet1"))
+         if(testData  == ExcelReader.readExcelRow("Valid credential", "Sheet1"))
+         {
+        	 String expsuccessmsg = Loginpf.validexcelexpsuccessmsg();
+             String actualsuccessfullmessage = Loginpf.loginsuccesfullmessage();
+    		Assert.assertEquals(expsuccessmsg, actualsuccessfullmessage, "user is not logged in"); 
+         }
+        else if(testData1  == ExcelReader.readExcelRow("Login1", "Sheet1"))
        {
     	   String experrormsg = testData1.get("ErrorMessage");
           	String actualerrormessage = Loginpf.invalidAssertionusernamebox();
@@ -96,16 +89,9 @@ public class LoginTest {
    		Assert.assertEquals(experrormsg, acterrormsg, "user is not able to see 'please fill out this field'message");
     	   
        }
-         }
-//
-//    @DataProvider(name="validlogin")
-//    public String[][] logindata() {
-//         String data[][] ={
-//            {"ninjalinos@work.com", "sdet218920@"}
-//        };
-//        return data;
-//    }
+    }
     
+
     
 
     }

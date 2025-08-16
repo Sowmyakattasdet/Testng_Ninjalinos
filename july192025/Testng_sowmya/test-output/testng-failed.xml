@@ -5,8 +5,8 @@
     <classes>
       <class name="testCases.RegisterTest">
         <methods>
-          <include name="validregister" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="validinvalidlogin" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- testCases.RegisterTest -->
     </classes>

@@ -87,6 +87,21 @@ public class LoginPage {
 		password_textbox.sendKeys(password);
 		login_button.click();
 	}
+	public String validexcelexpsuccessmsg() {
+		Map<String, String> testData = ExcelReader.readExcelRow("Valid credential", "Sheet1");
+		String expsuccessmsg = testData.get("ExpectedMsg");
+		return expsuccessmsg;
+	}
+	public String login1expErrormsg() {
+		Map<String, String> testData1 = ExcelReader.readExcelRow("Login1", "Sheet1");
+		String expsuccessmsg = testData1.get("ExpectedMsg");
+		return expsuccessmsg;
+	}
+	
+	public Map<String, String> testData1() {
+		Map<String, String> testData1 = ExcelReader.readExcelRow("Login1", "Sheet1");
+		return testData1;
+	}
 	
 
 
