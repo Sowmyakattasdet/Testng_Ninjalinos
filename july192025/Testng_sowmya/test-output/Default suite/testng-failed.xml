@@ -6,7 +6,7 @@
       <class name="testCases.RegisterTest">
         <methods>
           <include name="setup"/>
-          <include name="validinvalidlogin" invocation-numbers="0 1"/>
+          <include name="validinvalidlogin" invocation-numbers="0"/>
         </methods>
       </class> <!-- testCases.RegisterTest -->
     </classes>

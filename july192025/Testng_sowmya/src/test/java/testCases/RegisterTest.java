@@ -14,6 +14,7 @@ import pageFactory.HomePage;
 import pageFactory.LaunchPage;
 import pageFactory.LoginPage;
 import pageFactory.RegisterPage;
+import utils.Dataprovider;
 import utils.ExcelReader;
 
 public class RegisterTest {
@@ -26,7 +27,13 @@ public class RegisterTest {
 	 private Map<String, String> testData2;
 	 private Map<String, String> testData3;
 	 private Map<String, String> testData4;
-	 private Map<String, String> testData5; 
+	 private Map<String, String> testData5;
+	 private String actualmessage;
+	 private String String;
+	 private Object usernameC;
+	 private Object confirmpasswordC;
+	 private Object passwordC;
+	 private Map<java.lang.String, java.lang.String> testDat2; 
 	 
 	 @BeforeMethod
 		@Parameters("browser")
@@ -41,76 +48,104 @@ public class RegisterTest {
 			Launchpf.clickgetstarted();
 			Homepf.clickRegister();
 		}
-	 @Test(dataProvider = "validRegister",dataProviderClass=ExcelReader.class)
-	    public void validregister(String username, String password, String confirmpassword) throws IOException {
-	    	testData = ExcelReader.readExcelRow("validRegister", "Sheet1");
-	       Registerpf.setdatas(username, password, confirmpassword);
-	       Registerpf.clickRegisterbutton();
-	       String expsuccessmsg = testData.get("ErrorMessage");
-    	   
-    	   String actmsg = Registerpf.successfulMessage();
-   		System.out.println(expsuccessmsg);
-   		System.out.println(actmsg);
-   		Assert.assertEquals(actmsg, expsuccessmsg , "user not able to see 'user is already registered'");
+//	 @Test(dataProvider = "validRegister",dataProviderClass=ExcelReader.class)
+//	    public void validregister(String username, String password, String confirmpassword) throws IOException {
+//	    	testData = ExcelReader.readExcelRow("validRegister", "Sheet1");
+//	    //	Registerpf.row();
+//	       Registerpf.setdatas(username, password, confirmpassword);
+//	       Registerpf.clickRegisterbutton();
+//	       
+//	     //  String testData = Registerpf.row();
+//    	   System.out.println(testData);
+//    	   String actmsg = Registerpf.successfulMessage();
+//   	//	System.out.println(expsuccessmsg);
+//   		//System.out.println(actmsg);
+//   		
 //	        String expsuccessmsg = testData.get("ErrorMessage");
 //	        String actualsuccessfullmessage = Loginpf.loginsuccesfullmessage();
 //	  		Assert.assertEquals(expsuccessmsg, actualsuccessfullmessage, "user not able to see 'user is already registered'");
-
-	         }
-	 @Test(dataProvider = "validinvalidRegister",dataProviderClass=ExcelReader.class)
+//
+//	         }
+	 @Test(dataProvider = "validinvalidRegister",dataProviderClass=Dataprovider.class)
 	    public void validinvalidlogin(String username, String password, String confirmpassword) throws IOException {
-	    	//testData = ExcelReader.readExcelRow("validRegister", "Sheet1");
-	    	//  testData2 = ExcelReader.readExcelRow("Login2", "Sheet1");
+	    	testData = ExcelReader.readExcelRow("validRegister", "Sheet1");
+	    	testData1 = ExcelReader.readExcelRow("Register1", "Sheet1");
+	    	testData2 = ExcelReader.readExcelRow("Register2", "Sheet1");
+	    	testData3 = ExcelReader.readExcelRow("Register3", "Sheet1");
+	    	testData4 = ExcelReader.readExcelRow("Register4", "Sheet1");
+	    	testData5 = ExcelReader.readExcelRow("Register5", "Sheet1");
+	    	
 	      
 		 Registerpf.setdatas(username, password, confirmpassword);
 	       Registerpf.clickRegisterbutton();
-	       if(testData== ExcelReader.readExcelRow("validRegister", "Sheet1"))
-	         {
-	    	   String expsuccessmsg = testData.get("ErrorMessage");
-	    	   
-	    	   String actmsg = Registerpf.successfulMessage();
-	   		System.out.println(expsuccessmsg);
-	   		System.out.println(actmsg);
-	   		Assert.assertEquals(actmsg, expsuccessmsg , "user not able to see 'user is already registered'");
-	   	
-         }
-	       
-	        else if(testData1==ExcelReader.readExcelRow("Register1", "Sheet1"))
+	       Registerpf.username();
+	      
+	       String usernameA= Registerpf.username();
+	       String passwordA= Registerpf.password();
+	       String confirmpasswordA= Registerpf.confirmpassword();
+	       String usernameB= Registerpf.username1();
+	       String passwordB= Registerpf.password1();
+	       String confirmpasswordB= Registerpf.confirmpassword1();
+	       String usernameC= Registerpf.username2();
+	       String passwordC= Registerpf.password2();
+	       String confirmpasswordC= Registerpf.confirmpassword2();
+	       String usernameD= Registerpf.username3();
+	       String passwordD= Registerpf.password3();
+	       String confirmpasswordD= Registerpf.confirmpassword3();
+	       String usernameE= Registerpf.username4();
+	       String passwordE= Registerpf.password4();
+	       String confirmpasswordE= Registerpf.confirmpassword4();
+	       String usernameF= Registerpf.username5();
+	       String passwordF= Registerpf.password5();
+	       String confirmpasswordF= Registerpf.confirmpassword5();
+	      // System.out.println(Registerpf.username());
+	       if(username.equals(usernameA))//&& password.equals(passwordA) && confirmpassword.equals(confirmpasswordA) )
 	       {
-	    	   String experrormsg = testData1.get("ErrorMessage");
-	    	   String acterrormsg = Registerpf.invalidAssertionUsernamebox();
-	   		Assert.assertEquals(acterrormsg, experrormsg, "user is not able to see 'please fill out this field'message");  
+	    	   String experror =testData.get("ErrorMessage");//Registerpf.Errormsg(); //
+		        actualmessage = Registerpf.missmatchPasswordMessage();
+		  		Assert.assertEquals(experror, actualmessage, "user not able to see 'user is already registered'");
+ 
 	       }
-//	       else if(testData2 == ExcelReader.readExcelRow("Register2", "Sheet1"))
-//	       {
-//	    	   String experrormsg = testData2.get("ErrorMessage");
-//	    	   String acterrmsg = Registerpf.invalidAssertionPasswdnamebox();
-//	   		Assert.assertEquals(acterrmsg,  experrormsg, "user is not able to see 'please fill out this field'message");  
-//	       }
-//	       else if(testData3 == ExcelReader.readExcelRow("Register3", "Sheet1"))
-//	       {
-//	    	   String experrormsg = testData3.get("ErrorMessage");
-//	    	   String acterrormsg = Registerpf.invalidAssertionUsernamebox();
-//	   		Assert.assertEquals(acterrormsg, experrormsg, "user is not able to see 'please fill out this field'message");   
-//	       }
-//	       else if(testData4 == ExcelReader.readExcelRow("Register4", "Sheet1"))
-//	       {
-//	    	   String experrormsg = testData3.get("ErrorMessage");
-//	    	   String acterrormsg = Registerpf.invalidAssertionconfirmpswdbox();
-//	   		Assert.assertEquals(experrormsg, acterrormsg, "user is not able to see 'please fill out this field'message");
-//	    	   
-//	       }
-//	       else if(testData5 == ExcelReader.readExcelRow("Register5", "Sheet1"))
-//	       {
-//	    	   String experrormsg = testData3.get("ErrorMessage");
-//	    	   String actermsg = Registerpf.invalidAssertionconfirmpswdbox();
-//	   		Assert.assertEquals(actermsg, experrormsg, "user is not able to see 'please fill out this field'message");
-//	       }
+	       else if(username.equals(usernameB) && password.equals(passwordB))// && confirmpassword.equals(confirmpasswordB))
+	       {
+	    	   String expsuccessmsg =testData1.get("ErrorMessage"); //Registerpf.Errormsg1();
+		        String actualmessage = Registerpf.invalidAssertionUsernamebox();
+		  		Assert.assertEquals(expsuccessmsg, actualmessage, "user not able to see 'fill out this field message'");
+
+	       }
+	       else if(username.equals(usernameC) && password.equals(passwordC) )//&& confirmpassword.equals(confirmpasswordC))
+	       {
+	    	   String expsuccessmsg = testData2.get("ErrorMessage");//Registerpf.Errormsg2();
+		        String actualmessage =Registerpf.invalidAssertionPasswdnamebox();
+		  		Assert.assertEquals(expsuccessmsg, actualmessage, "user not able to see 'fill out this field message'");
+
+	       }
+	       else if(username.equals(usernameD) && password.equals(passwordD) )//&& confirmpassword.equals(confirmpasswordD))
+	       {
+	    	   String expsuccessmsg =testData3.get("ErrorMessage");// Registerpf.Errormsg3();
+		        String actualmessage = Registerpf.invalidAssertionUsernamebox();
+		  		Assert.assertEquals(expsuccessmsg, actualmessage, "user not able to see 'fill out this field message'");
+
+	       }
+	       else if(username.equals(usernameE) && password.equals(passwordE) )//&& confirmpassword.equals(confirmpasswordE))
+	       {
+	    	   String expsuccessmsg = testData4.get("ErrorMessage");//Registerpf.Errormsg4();
+		        String actualmessage = Registerpf.invalidAssertionconfirmpswdbox();
+		  		Assert.assertEquals(expsuccessmsg, actualmessage, "user not able to see 'fill out this field message'");
+
+	       }
+	       else if(username.equals(usernameF) &&  confirmpassword.equals(confirmpasswordF))
+	       {
+	    	   String expsuccessmsg = testData5.get("ErrorMessage");//Registerpf.Errormsg5();
+		        String actualmessage =  Registerpf.missmatchPasswordMessage();
+		  		Assert.assertEquals(expsuccessmsg, actualmessage, "user not able to see 'fill out this field message'");
+
+	       }
+	       
 
 	         }
-	 private Object readExcelRow(String string, String string2) {
-		// TODO Auto-generated method stub
-		return null;
+
+
 	 }
 	 
 	 
@@ -119,4 +154,4 @@ public class RegisterTest {
 	 
 	 
 	 
-}
+
